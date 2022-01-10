@@ -23,7 +23,9 @@ const getRepos = async () => {
 
   const reposData =
     result
-      .filter((({ name, fork }) => name !== 'pedrotrasfereti' && !fork))
+      .filter((({ name, fork }) => (
+        !['pedrotrasfereti', 'portfolio'].includes(name) && !fork
+      )))
       .map(((
         {
           name,
