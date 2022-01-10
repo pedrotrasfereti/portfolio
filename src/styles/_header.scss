@@ -1,0 +1,161 @@
+@import './themes';
+
+@media only screen and (max-width: 1250px) {
+  .Navbar {
+    display: none !important;
+  }
+
+  .MenuBtn {
+    margin: 0 2.375em 0 auto !important;
+  }
+}
+
+.Header {
+  @include themify() {
+    background-color: t($header);
+    border-bottom: 1px solid t($header);
+    box-shadow: 0 4px 2px -2px t($shadow);
+    width: $default-width;
+    max-width: 100vw;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    z-index: 2;
+
+    @include smooth();
+  }
+
+  .Title {
+    @include themify() {
+      color: t($text);
+      @include smooth();
+    }
+
+    margin: $title-margin;
+    font: $title-font;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5%);
+    }
+  }
+
+  .Icon {
+    @include themify() {
+      color: t($primary);
+      @include smooth();
+    }
+
+    appearance: none;
+    background: none;
+    border: 0;
+    border-radius: 50%;
+    font-size: 1.375em;
+    padding: .4rem .4rem .1rem .4rem;
+    cursor: pointer;
+
+    &:hover {
+      @include themify() {
+        background: t($btnHover);
+        color: t($secondary);
+      }
+    }
+
+    &:active {
+      @include themify() {
+        background: t($btnActive);
+      }
+    }
+  }
+
+  .MenuBtn {
+    margin: 0 2.375em 0 1.125em;
+  }
+
+  .Navbar {
+    margin-left: auto;
+    display: inherit;
+    align-items: inherit;
+    height: 100%;
+
+    .Selected {
+      transform: translateY(1px);
+
+      @include themify() {
+        color: t($primary);
+        border-bottom: 2px solid t($primary);
+      }
+
+      &:hover {
+        @include themify() {
+          color: t($secondary);
+          background-color: t($btnHover);
+        }
+      }
+    }
+  
+    .Link {
+      @include themify() {
+        color: t($textAlt);
+      }
+
+      height: 100%;
+      padding: $link-gap;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font: $text-font;
+  
+      &:hover {
+        @include themify() {
+          color: t($text);
+          background-color: t($btnHover);
+        }
+      }
+    }
+  
+    .Button {
+      @include themify() {
+        color: t($btnText);
+        background-color: t($primary);
+        outline: $btn-outline solid t($primary);
+
+        &:hover {
+          color: t($primary);
+          background: transparent;
+        }
+
+        @include smooth();
+      }
+
+      display: inline-block;
+      height: 2.5em;
+      margin: $link-gap;
+      padding: $btn-padding;
+      border: 0;
+      border-radius: $btn-radius;
+      text-decoration: none;
+      font: $link-font;
+      cursor: pointer;
+    }
+
+    .Divider {
+      @include themify() {
+        background-color: t($border);
+        @include smooth();
+      }
+
+      display: block;
+      height: 50%;
+      width: 1px;
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  
+    .ThemeBtn {
+      margin: $theme-gap;
+    }
+  }
+}

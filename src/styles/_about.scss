@@ -1,0 +1,48 @@
+@import './themes';
+
+.About {
+  @include themify() {
+    background: t($body);
+    display: flex;
+    align-items: center;
+    width: $default-width;
+    min-height: $section-height;
+  }
+
+  .Image {
+    @include themify() {
+      background: t($borderSpecial);
+    }
+
+    width: 13em;
+    height: 13em;
+    border: transparent;
+    border-radius: 50%;
+    margin-left: auto;
+    padding: .2em;
+  }
+
+  .Content {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto 0 3.75em;
+
+    .Heading {
+      @include themify() {
+        color: t($text);
+      }
+
+      font: 500 2.5em Poppins, sans-serif;
+    }
+  
+    .Paragraph {
+      @include themify() {
+        color: t($textAlt);
+      }
+
+      margin-top: 2rem;
+      max-width: 40rem;
+      font: $body-font;
+    }
+  }
+}

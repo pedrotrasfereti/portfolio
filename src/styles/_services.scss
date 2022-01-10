@@ -1,0 +1,109 @@
+@import './themes';
+
+.Services {
+  @include themify() {
+    background-color: t($body);
+    width: $default-width;
+    min-height: $section-height;
+    padding: 2.6rem;
+  }
+
+  .Heading {
+    @include themify() {
+      color: t($text);
+    }
+
+    padding: 2.6rem 0;
+    text-align: center;
+    font: 500 2.5em Poppins, sans-serif;
+  }
+
+  .Services--Container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+
+    .Service {
+      @include themify() {
+        background: t($bodyAlt);
+        box-shadow: 0 0 6px -2px t($shadow);
+      }
+
+      border: 0;
+      border-radius: 1em;
+
+      .Decoration {
+        @include themify() {
+          background: t($borderSpecial);
+        }
+
+        display: block;
+        height: .25em;
+        width: 100%;
+        margin: 1.25em 0 auto 0;
+      }
+
+      .Content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 1.5rem;
+        padding-top: 5.5rem;
+        width: 18rem;
+        height: 20rem;
+
+        .Icon {
+          @include themify() {
+            color: t($primary);
+          }
+  
+          font-size: 2em;
+        }
+  
+        .Title {
+          @include themify() {
+            color: t($text);
+          }
+  
+          font: 500 1.5em Poppins, sans-serif;
+        }
+
+        .Description {
+          @include themify() {
+            color: t($textAlt);
+          }
+  
+          font: 400 1em Poppins, sans-serif;
+        }
+  
+        .Link {
+          @include themify() {
+            color: t($primary);
+  
+            &:hover {
+              color: t($secondary);
+  
+              .Arrow {
+                transform: translateY(15%);
+                transition: .2s;
+              }
+            }
+          }
+  
+          text-decoration: none;
+          font: $link-font;
+          cursor: pointer;
+  
+          .Arrow {
+            font-size: 1em;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/*-================== COLORS ===================-*/
+$medium-turquoise: #2CDDB7; // Secondary Light
+$turquoise: #50E3C2; // Primary Light
+$medium-aquamarine: #5CFFDC; // Secondary Dark
+$aquamarine: #73FFE0; // Primary Dark
+
+$white: #FFFFFF;
+$alabaster: #F9F9F9;
+$white-lilac: #F4F4FB;
+$black-squeeze: #F3F8FB;
+$alice-blue: #ECF4F8;
+
+$lavender-web: #E9E9F7;
+$lavender-gray: #C8CBD6;
+
+$big-stone: #1A2744; // Main Dark
+$rhino: #2E3D60; // Header-Footer Dark
+$east-bay: #455781; // Link Hover Dark
+$blue-yonder: #6076A9; // Link Active Dark
+
+$gradient-light: linear-gradient(170deg, #0FFA7D 0%, #0FF2FA 100%); 
+$gradient-dark: linear-gradient(170deg, #1DD573 0%, #1DCED5 100%);
+
+/*-================== FONTS ===================-*/
+$title-font: 500 1.15em Poppins, sans-serif;
+$text-font: 400 1em Poppins, sans-serif;
+$heading-font: 500 4.2em Poppins, sans-serif;
+$body-font: 400 1.11em Poppins, sans-serif;
+$link-font: 500 1.04em Poppins, sans-serif;
+$x-small-font: 400 0.9em Poppins, sans-serif;
+
+/*-================== SIZES ===================-*/
+$header-height: 4rem;
+$home-height: 100vh;
+$section-height: 32rem;
+$footer-height: 15rem;
+$default-width: 100%;
+
+/*-================== SPACINGS ===================-*/
+// Header
+$title-margin: 0 0 0 2.375em;
+$link-gap: 0 1.25em;
+$theme-gap: 0 1.125em 0 2em;
+
+// Home
+$home-padding: 1em 3.5em;
+
+// Button
+$btn-padding: .5rem 1.2rem;
+$btn-radius: .4rem;
+$btn-outline: .12rem;

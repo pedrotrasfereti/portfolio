@@ -1,0 +1,163 @@
+@import './themes';
+
+@media only screen and (max-width: 1347px) {
+  .Dropdown--Container {
+    justify-content: center;
+  }
+}
+
+.Skills {
+  @include themify() {
+    background-color: t($body);
+    width: $default-width;
+    min-height: $section-height;
+  }
+
+  .Heading {
+    @include themify() {
+      color: t($text);
+    }
+
+    padding: 2.6rem 0;
+    text-align: center;
+    font: 500 2.5em Poppins, sans-serif;
+  }
+
+  .Dropdown--Container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 15rem;
+    gap: 1.75rem;
+    margin: auto;
+
+    .Dropdown {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-end;
+
+      .Hidden {
+        display: none;
+      }
+
+      .DdHeader {
+        @include themify() {
+          background: t($bodyAlt);
+          height: 4.5rem;
+          width: 26rem;
+          box-shadow: 0 0 6px -2px t($shadow);
+          border: 0;
+          border-radius: 1em;
+          display: flex;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+
+          .Icon {
+            color: t($primary);
+            font-size: 1.6em;
+            margin: 0 1.5rem;
+          }
+
+          .Container {
+            .Title {
+              color: t($text);
+              font: 500 1.2em Poppins, sans-serif;
+            }
+
+            .Link {
+              color: t($textAlt);
+              text-decoration: none;
+              font: $x-small-font;
+
+              &:hover {
+                color: t($text);
+              }
+            }
+          }
+
+          .Button {
+            background: none;
+            color: t($text);
+            appearance: none;
+            margin: 0 1.5rem 0 auto;
+            padding: .2rem .2rem 0 .2rem;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2em;
+            cursor: pointer;
+
+            &:hover {
+              background: t($btnHover);
+            }
+
+            &:active {
+              background: t($btnActive);
+            }
+          }
+        }
+      }
+
+      .DropdownList {
+        list-style: none;
+        padding: 0;
+        background: none;
+        width: 25rem;
+        height: 10rem;
+        overflow-y: scroll;
+        animation: .7s slideDown forwards;
+
+        .Skill {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          padding: .5rem 0;
+
+          .Container {
+            @include themify() {
+              color: t($text);
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem;
+              font: $text-font;
+            }
+          }
+
+          .ProgressBar {
+            @include themify() {
+              background: t($border);
+              height: .375rem;
+              width: calc(100% - 2rem);
+              margin-left: 1rem;
+              border: 0;
+              border-radius: 1em;
+            }
+
+            .Ability {
+              @include themify() {
+                background: t($primary);
+                height: .375rem;
+                width: 80%;
+                border: 0;
+                border-radius: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100;
+  }
+}

@@ -1,0 +1,75 @@
+@import './themes';
+
+.Footer {
+  @include themify() {
+    background-color: t($footer);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: $default-width;
+    min-height: $footer-height;
+    padding: 3rem 3.5rem;
+  }
+
+  .Content--Container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .Container {
+      display: flex;
+      flex-flow: column nowrap;
+  
+      .Title {
+        @include themify() {
+          color: t($text);
+          font: $title-font;
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    .Container .Subtitle, .Copyright {
+      @include themify() {
+        color: t($textAlt);
+        font: $text-font;
+      }
+    }
+
+    .Social {
+      align-self: flex-start;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      height: 1.5rem;
+      gap: 1.5rem;
+  
+      .SocialIcon {
+        @include themify() {
+          color: t($primary);
+  
+          &:hover {
+            color: t($secondary);
+          }
+  
+          @include smooth();
+        }
+  
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .Copyright--Container {
+    display: flex;
+    justify-content: center;
+
+    .Copyright {
+      @include themify() {
+        color: t($textAlt);
+        font: $x-small-font;
+      }
+    }
+  }
+}

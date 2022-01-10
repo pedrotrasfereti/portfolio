@@ -1,0 +1,152 @@
+@import './themes';
+
+@media only screen and (max-width: 1250px) {
+  .Home {
+    .Content--Container {
+      flex-flow: column nowrap !important;
+
+      .Social {
+        flex-flow: row nowrap !important;
+        margin: 2.5rem 0 1rem !important;
+      }
+
+      .Link {
+        display: none !important;
+      }
+    }
+
+    .Illustration--Container {
+      display: none !important;
+    }
+  }
+}
+
+.Home {
+  @include themify() {
+    background-color: t($body);
+    display: flex;
+    align-items: center;
+    width: $default-width;
+    min-height: $home-height;
+    padding: $home-padding;
+    @include smooth();
+  }
+
+  .Content--Container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .Social {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: 2rem 3.5rem 0 0;
+      gap: 1.5rem;
+  
+      .Icon {
+        @include themify() {
+          color: t($primary);
+
+          &:hover {
+            color: t($secondary);
+          }
+
+          @include smooth();
+        }
+
+        font-size: 1.5em;
+      }
+    }
+
+    .Hero {
+      .Heading {
+        @include themify() {
+          color: t($text);
+          @include smooth();
+        }
+    
+        width: 700px;
+        font: $heading-font;
+      }
+
+      .Description {
+        @include themify() {
+          color: t($textAlt);
+          margin-top: .5em;
+          width: 37em;
+          font: $body-font;
+          @include smooth();
+        }
+      }
+
+      .Button {
+        @include themify() {
+          color: t($btnText);
+          background-color: t($primary);
+          outline: $btn-outline solid t($primary);
+          display: inline-block;
+          height: 2.5em;
+          margin-top: 2em;
+          padding: $btn-padding;
+          border: transparent;
+          border-radius: $btn-radius;
+          text-decoration: none;
+          font: $link-font;
+          cursor: pointer;
+          @include smooth();
+  
+          &:hover {
+            color: t($primary);
+            background: transparent;
+          }
+        }
+      }
+    }
+      
+    .Link {
+      @include themify() {
+        color: t($primary);
+        position: absolute;
+        left: 8.15rem;
+        bottom: 2em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font: $link-font;
+        cursor: pointer;
+        @include smooth();
+
+        .Mouse {
+          font-size: 1.5em;
+        }
+
+        &:hover {
+          color: t($secondary);
+
+          .Arrow {
+            transform: translateY(15%);
+            transition: .2s;
+          }
+        }
+      }
+    }
+  }
+
+  .Illustration--Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Illustration {
+      @include themify() {
+        background: url(t($illustration)) no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-height: 85vh;
+        min-width: 100%;
+        @include smooth();
+      }
+    }
+  }
+}

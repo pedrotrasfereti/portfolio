@@ -1,0 +1,143 @@
+@import './themes';
+
+.Contact {
+  @include themify() {
+    background-color: t($body);
+    width: $default-width;
+    min-height: $section-height;
+    padding: 2.6rem 2.6rem 10rem 2.6rem;
+  }
+
+  .Heading {
+    @include themify() {
+      color: t($text);
+      padding: 2.6rem 0;
+      text-align: center;
+      font: 500 2.5em Poppins, sans-serif;
+    }
+  }
+
+  .Contact--Container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+    gap: 4rem;
+
+    .Info--Container {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 4rem;
+
+      .Info {
+        display: flex;
+        gap: 1rem;
+
+        .Icon {
+          @include themify() {
+            color: t($primary);
+          }
+
+          margin-top: .25rem;
+          font-size: 2em;
+        }
+
+        .Container {
+          display: inherit;
+          flex-flow: column nowrap;
+          gap: .25em;
+
+          .Name {
+            @include themify() {
+              color: t($text);
+              font: 500 1.45em Poppins, sans-serif;;
+            }
+          }
+
+          span {
+            @include themify() {
+              color: t($textAlt);
+              font: 500 1em Poppins, sans-serif;;
+            }
+          }
+        }
+      }
+    }
+
+    .Form {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      gap: 1rem;
+
+      .Input, .TextArea {
+        &:focus {
+          @include themify() {
+            outline: $btn-outline solid t($primary);
+          }
+        }
+      }
+
+      .Input {
+        @include themify() {
+          color: t($text);
+          background: t($btnText);
+          box-shadow: 0 0 6px -2px t($shadow);
+          height: 3rem;
+          width: 25rem;
+          padding: 1rem;
+          border: 0;
+          border-radius: .4rem;
+          font: $text-font;
+        }
+      }
+
+      .TextArea {
+        @include themify() {
+          color: t($text);
+          background: t($btnText);
+          box-shadow: 0 0 6px -2px t($shadow);
+          height: 100%;
+          width: 25rem;
+          padding: 1rem;
+          border: 0;
+          border-radius: .4rem;
+          resize: vertical;
+          font: $text-font;
+        }
+      }
+
+      .Button {
+        @include themify() {
+          color: t($btnText);
+          background-color: t($primary);
+          outline: $btn-outline solid t($primary);
+
+          &:hover {
+            color: t($primary);
+            background: transparent;
+          }
+      
+          @include smooth();
+        }
+
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5em;
+        padding: $btn-padding;
+        border: 0;
+        border-radius: $btn-radius;
+        text-decoration: none;
+        gap: .25em;
+        font: $link-font;
+        cursor: pointer;
+
+        .Icon {
+          font-size: 1.15em;
+        }
+      }
+    }
+  }
+}
