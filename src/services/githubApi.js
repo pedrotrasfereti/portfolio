@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const formatName = (nameStr) => {
   const removeCustom =
     nameStr.replace('trybe', '')
@@ -18,11 +20,11 @@ const formatName = (nameStr) => {
 
 const getRepos = async () => {
   const url = 'https://api.github.com/users/pedrotrasfereti/repos'
-  const response = await fetch(url)
-  const result = await response.json()
+  const response = await axios.get(url)
+  const data = response.data
 
   const reposData =
-    result
+    data
       .filter((({ name, fork }) => (
         !['pedrotrasfereti', 'portfolio'].includes(name) && !fork
       )))
