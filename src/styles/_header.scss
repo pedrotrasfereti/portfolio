@@ -1,12 +1,16 @@
 @import './themes';
 
 @media only screen and (max-width: 1250px) {
-  .Navbar {
+  .Header > .Navbar {
     display: none !important;
   }
 
   .MenuBtn {
-    margin: 0 2.375em 0 auto !important;
+    display: inline-block !important;
+  }
+
+  .Menu {
+    display: block !important;
   }
 }
 
@@ -70,11 +74,7 @@
     }
   }
 
-  .MenuBtn {
-    margin: 0 2.375em 0 1.125em;
-  }
-
-  .Navbar {
+  & > .Navbar {
     margin-left: auto;
     display: inherit;
     align-items: inherit;
@@ -132,7 +132,7 @@
 
       display: inline-block;
       height: 2.5em;
-      margin: $link-gap;
+      margin: 0 2.85rem 0 1.25rem;
       padding: $btn-padding;
       border: 0;
       border-radius: $btn-radius;
@@ -141,21 +141,127 @@
       cursor: pointer;
     }
 
-    .Divider {
-      @include themify() {
-        background-color: t($border);
-        @include smooth();
-      }
-
-      display: block;
-      height: 50%;
-      width: 1px;
-      margin-left: 7px;
-      margin-right: 7px;
-    }
-  
     .ThemeBtn {
       margin: $theme-gap;
+    }
+  }
+
+  .MenuBtn {
+    display: none;
+    margin: 0 2.375rem 0 auto;
+  }
+
+  .Menu {
+    @include themify() {
+      position: absolute;
+      top: $header-height;
+      right: 0;
+      display: none;
+      background: t($header);
+      width: 100%;
+      box-shadow: 0 0 6px -2px t($border);
+      border: 0;
+      border-radius: .4rem;
+    }
+
+    .Navbar {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem 0;
+
+      .Link, .Divider, .Switch--Container {
+        margin: 1rem 0;
+      }
+
+      .Link {
+        @include themify() {
+          color: t($textAlt);
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font: $body-font;
+      }
+
+      .Divider {
+        @include themify() {
+          display: block;
+          background: t($border);
+          height: 1px;
+          width: 2rem;
+        }
+      }
+  
+      .Switch--Container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .Label {
+          @include themify() {
+            display: block;
+            color: t($textAlt);
+            margin-right: 1rem;
+            font: $body-font;
+          }
+        }
+  
+        .Switch {
+          position: relative;
+          display: inline-block;
+          width: 2.75em;
+          height: 1.5em;
+    
+          .Slider {
+            @include themify() {
+              background: t($switch);
+            }
+    
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 5em;
+    
+            &:before {
+              content: "";
+              background: $white;
+              position: absolute;
+              height: 1.5em;
+              width: 1.5em;
+              border-radius: 50%;
+              @include smooth();
+    
+              @include themify() {
+                box-shadow: 0 0 6px t($shadow);
+              }
+            }
+          }
+    
+          .Checkbox {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+    
+          .Checkbox:checked + .Slider:before {
+            -webkit-transform: translateX(1.3em);
+            -ms-transform: translateX(1.3em);
+            transform: translateX(1.3em);
+          }
+        }
+      }
     }
   }
 }

@@ -15,6 +15,7 @@ $default: (
   btnActive: $alice-blue,
   bubble: $white-lilac,
   shadow: $lavender-gray,
+  switch: $lavender-gray,
   border: $lavender-gray,
   borderSpecial: $gradient-light,
   illustration: '../images/Illustration.svg',
@@ -34,6 +35,7 @@ $dark: (
   btnActive: $blue-yonder,
   bubble: $east-bay,
   shadow: transparent,
+  switch: $big-stone,
   border: $blue-yonder,
   borderSpecial: $gradient-dark,
   illustration: '../images/Illustration2.svg',
@@ -83,6 +85,7 @@ $btnHover: 'btnHover';
 $btnActive: 'btnActive';
 $bubble: 'bubble';
 $shadow: 'shadow';
+$switch: 'switch';
 $border: 'border';
 $borderSpecial: 'borderSpecial';
 $illustration: 'illustration';

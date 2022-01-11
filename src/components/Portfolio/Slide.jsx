@@ -12,7 +12,7 @@ import { RiArrowRightSLine as ArrowRight } from 'react-icons/ri'
 import {
   defaultValue,
   getRepos
-} from '../../services/getRepos'
+} from '../../services/githubApi'
 
 const Slide = () => {
   const [repos, setRepos] = useState(defaultValue)
