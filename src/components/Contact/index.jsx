@@ -22,21 +22,23 @@ const Contact = () => {
             <Phone className="Icon" />
             <div className="Container">
               <h2 className="Name">Telefone</h2>
-              <span>+55(19)987050602 </span>
+              <span className="Text">+55(19)987050602 </span>
             </div>
           </div>
           <div className="Info">
             <Email className="Icon" />
             <div className="Container">
               <h2 className="Name">E-Mail</h2>
-              <span>pedrotrasfereti@gmail.com</span>
+              <span className="Text">pedrotrasfereti@gmail.com</span>
             </div>
           </div>
           <div className="Info">
             <MapPin className="Icon" />
             <div className="Container">
               <h2 className="Name">Local</h2>
-              <span>R. Gago Coutinho, 10 - Campinas/SP</span>
+              <span className="Text">
+                R. Gago Coutinho, 10 - Campinas/SP
+              </span>
             </div>
           </div>
         </div>

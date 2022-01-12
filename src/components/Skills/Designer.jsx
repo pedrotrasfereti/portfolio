@@ -6,14 +6,20 @@ import { BiPen as DesignerIcon } from 'react-icons/bi'
 import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
 import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
 
-const Designer = ({ handleDropdown, arrow }) => {
+const Designer = ({ handleDropdown, arrow, setWidth }) => {
   return (
     <div className="Dropdown">
       <div className="DdHeader">
         <DesignerIcon className="Icon" />
         <div className="Container">
           <h2 className="Title">UI Design</h2>
-          <a href="" target="_blank" className="Link">Ver Certificado</a>
+          <a
+            href=""
+            target="_blank"
+            className="Link Unavailable"
+          >
+            Ver Credencial
+          </a>
         </div>
         <button
           className="Button"
@@ -27,19 +33,19 @@ const Designer = ({ handleDropdown, arrow }) => {
         <li className="Skill">
           <div className="Container">
             <span>UI Design para Iniciantes</span>
-            <span>65%</span>
+            <span>10%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(10)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Figma</span>
-            <span>80%</span>
+            <span>15%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(15)} />
           </span>
         </li>
       </ul>

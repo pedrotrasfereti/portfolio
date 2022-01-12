@@ -6,14 +6,20 @@ import { BiServer as BackIcon } from 'react-icons/bi'
 import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
 import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
 
-const Backend = ({ handleDropdown, arrow }) => {
+const Backend = ({ handleDropdown, arrow, setWidth }) => {
   return (
     <div className="Dropdown">
       <div className="DdHeader">
         <BackIcon className="Icon" />
         <div className="Container">
           <h2 className="Title">Desenvolvimento Back-End</h2>
-          <a href="" target="_blank" className="Link">Ver Certificado</a>
+          <a
+            href=""
+            target="_blank"
+            className="Link Unavailable"
+          >
+            Ver Credencial
+          </a>
         </div>
         <button
           className="Button"
@@ -27,55 +33,55 @@ const Backend = ({ handleDropdown, arrow }) => {
         <li className="Skill">
           <div className="Container">
             <span>SQL</span>
-            <span>65%</span>
+            <span>70%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(70)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>MongoDB</span>
-            <span>80%</span>
+            <span>30%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(30)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Node.js</span>
-            <span>80%</span>
+            <span>50%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(50)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Express.js</span>
-            <span>80%</span>
+            <span>60%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(60)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Arquitetura ORM/SOLID</span>
-            <span>80%</span>
+            <span>1%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(1)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Socket.io</span>
-            <span>80%</span>
+            <span>1%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" />
+            <div className="Ability" style={setWidth(1)} />
           </span>
         </li>
       </ul>

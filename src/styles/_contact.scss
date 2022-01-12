@@ -1,7 +1,35 @@
 @import './themes';
 
+@media only screen and (max-width: 1000px) {
+  .Contact {
+    .Heading {
+      font: $small-heading-font !important;
+    }
+
+    .Name {
+      font: $title-font !important;
+    }
+
+    .Text {
+      font: $x-small-font !important;
+    }
+
+    .Form {
+      .Input {
+        height: $small-input-height !important;
+        width: $small-input-width !important;
+      }
+
+      .TextArea {
+        width: $small-input-width !important;
+      }
+    }
+  }
+}
+
 .Contact {
   @include themify() {
+    @include smooth();
     background-color: t($body);
     min-height: $section-height;
     padding: 2.6rem 2.6rem 10rem 2.6rem;
@@ -36,7 +64,7 @@
         .Icon {
           @include themify() {
             color: t($primary);
-            font-size: 2em;
+            font-size: $x-large-icon;
             margin-top: .25rem;
           }
         }
@@ -49,14 +77,14 @@
           .Name {
             @include themify() {
               color: t($text);
-              font: $small-heading-font;
+              font: $x-small-heading-font;
             }
           }
 
-          span {
+          .Text {
             @include themify() {
               color: t($textAlt);
-              font: $bold-small-font;
+              font: $small-font;
             }
           }
         }
@@ -79,30 +107,32 @@
 
       .Input {
         @include themify() {
+          @include smooth();
           color: t($text);
           background: t($btnText);
           border: 0;
           border-radius: .4rem;
           box-shadow: 0 0 6px -2px t($shadow);
           font: $small-font;
-          height: 3rem;
+          height: $input-height;
           padding: 1rem;
-          width: 25rem;
+          width: $input-width;
         }
       }
 
       .TextArea {
         @include themify() {
+          @include smooth();
           color: t($text);
           background: t($btnText);
           border: 0;
           border-radius: .4rem;
           box-shadow: 0 0 6px -2px t($shadow);
           font: $small-font;
-          height: 100%;
+          height: $textarea-height;
           padding: 1rem;
-          resize: vertical;
-          width: 25rem;
+          resize: none;
+          width: $input-width;
         }
       }
 
@@ -132,7 +162,7 @@
         }
 
         .Icon {
-          font-size: 1.15em;
+          font-size: $small-icon;
         }
       }
     }

@@ -1,10 +1,43 @@
 @import './themes';
 
+@media only screen and (max-width: 957px) {
+  .About {
+    .Image {
+      height: 12rem !important;
+      width: 12rem !important;
+    }
+
+    .Heading {
+      font: $small-heading-font !important;
+      text-align: center !important;
+    }
+
+    .Paragraph {
+      font: $small-font !important;
+      text-align: center !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .About {
+    .Image {
+      height: 11rem !important;
+      width: 11rem !important;
+    }
+  }
+}
+
+
+
 .About {
   @include themify() {
+    @include smooth();
     align-items: center;
     background: t($body);
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     min-height: $section-height;
     width: $default-width;
   }
@@ -14,17 +47,17 @@
       background: t($borderSpecial);
       border: transparent;
       border-radius: 50%;
-      height: 16%;
-      margin-left: auto;
-      padding: .2em;
-      width: 16%;
+      height: 13rem;
+      padding: .2rem;
+      width: 13rem;
     }
   }
 
   .Content {
     display: flex;
-    flex-flow: column wrap;
-    margin: 0 auto 0 3.75em;
+    flex-flow: column nowrap;
+    gap: 1.75em;
+    padding: 1.75em 3.5rem 3.5rem;
 
     .Heading {
       @include themify() {
@@ -32,12 +65,12 @@
         font: $medium-heading-font;
       }
     }
-  
+
     .Paragraph {
       @include themify() {
         color: t($textAlt);
         font: $medium-font;
-        margin-top: 2rem;
+        line-height: 2rem;
         max-width: 40rem;
       }
     }

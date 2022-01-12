@@ -7,6 +7,7 @@
 
       .Social {
         flex-flow: row nowrap !important;
+        gap: 1rem !important;
         margin: 2.5rem 0 1rem .15rem !important;
       }
 
@@ -17,6 +18,23 @@
 
     .Illustration--Container {
       display: none !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Social .Icon {
+    font-size: $small-icon !important;
+  }
+
+  .Hero {
+    .Heading {
+      font: $big-heading-font !important;
+    }
+
+    .Description {
+      font: $small-font !important;
+      max-width: 29em !important;
     }
   }
 }
@@ -47,7 +65,7 @@
         @include themify() {
           @include smooth();
           color: t($primary);
-          font-size: 1.5em;
+          font-size: $medium-icon;
 
           &:hover {
             color: t($secondary);
@@ -62,7 +80,7 @@
           @include smooth();
           color: t($text);
           font: $x-large-heading-font;
-          width: 700px;
+          max-width: 38rem;
         }
       }
 
@@ -71,6 +89,7 @@
           @include smooth();
           color: t($textAlt);
           font: $medium-font;
+          line-height: 2rem;
           margin-top: .5em;
           width: 37em;
         }
@@ -86,7 +105,6 @@
           cursor: pointer;
           display: inline-block;
           font: $bold-small-font;
-          height: 2.5em;
           margin-top: 2em;
           outline: $btn-outline solid t($primary);
           padding: $btn-padding;
@@ -114,13 +132,14 @@
         text-decoration: none;
 
         .Mouse {
-          font-size: 1.5em;
+          font-size: $medium-icon;
         }
 
         &:hover {
           color: t($secondary);
 
           .Arrow {
+            font-size: $x-small-icon;
             transform: translateY(15%);
             transition: .2s;
           }
@@ -137,10 +156,10 @@
 
     .Illustration {
       @include themify() {
-        @include smooth();
         background: url(t($illustration)) no-repeat;
         background-position: center;
         background-size: contain;
+        filter: drop-shadow(12px 12px 5px t($shadow));
         min-height: 85vh;
         min-width: 100%;
       }

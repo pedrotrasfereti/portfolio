@@ -10,7 +10,11 @@ import Selfie from '../../images/Selfie.jpeg';
 const About = () => {
   return (
     <section id="about" className="About">
-      <img src={Selfie} alt="Uma selfie" className="Image" />
+      <img
+        src={Selfie}
+        alt="Uma selfie"
+        className="Image"
+      />
 
       <div className="Content">
         <h1 className="Heading">Sobre mim</h1>

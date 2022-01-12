@@ -1,7 +1,16 @@
 @import './themes';
 
+@media only screen and (max-width: 1000px) {
+  .Services {
+    .Heading {
+      font: $small-heading-font !important;
+    }
+  }
+}
+
 .Services {
   @include themify() {
+    @include smooth();
     background-color: t($body);
     min-height: $section-height;
     padding: 2.6rem;
@@ -27,6 +36,7 @@
 
     .Service {
       @include themify() {
+        @include smooth();
         background: t($bodyAlt);
         border: 0;
         border-radius: 1em;
@@ -44,6 +54,7 @@
       }
 
       .Content {
+        @include smooth();
         align-items: flex-start;
         display: flex;
         flex-flow: column nowrap;
@@ -56,7 +67,7 @@
         .Icon {
           @include themify() {
             color: t($primary);
-            font-size: 2em;
+            font-size: $x-large-icon;
           }
         }
   
@@ -92,7 +103,7 @@
           }
 
           .Arrow {
-            font-size: 1em;
+            font-size: $x-small-icon;
             margin-right: 1em;
           }
         }

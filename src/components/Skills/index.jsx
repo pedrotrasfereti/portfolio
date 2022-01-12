@@ -48,13 +48,33 @@ const Skills = () => {
     methods[id](!values[id])
   }
 
+  const setWidth = (percentage) => {
+    return {
+      width: `${percentage}%`,
+    }
+  }
+
   return (
     <section id="skills" className="Skills">
       <h1 className="Heading">Habilidades</h1>
       <div className="Dropdown--Container">
-        <Frontend handleDropdown={handleDropdown} arrow={arrowFe} />
-        <Backend handleDropdown={handleDropdown} arrow={arrowBe} />
-        <Designer handleDropdown={handleDropdown} arrow={arrowDe} />
+        <Frontend
+          handleDropdown={handleDropdown}
+          arrow={arrowFe}
+          setWidth={setWidth}
+        />
+
+        <Backend
+          handleDropdown={handleDropdown}
+          arrow={arrowBe}
+          setWidth={setWidth}
+        />
+
+        <Designer
+          handleDropdown={handleDropdown}
+          arrow={arrowDe}
+          setWidth={setWidth}
+        />
       </div>
     </section>
   )
