@@ -3,26 +3,26 @@
 .Contact {
   @include themify() {
     background-color: t($body);
-    width: $default-width;
     min-height: $section-height;
     padding: 2.6rem 2.6rem 10rem 2.6rem;
+    width: $default-width;
   }
 
   .Heading {
     @include themify() {
       color: t($text);
+      font: $medium-heading-font;
       padding: 2.6rem 0;
       text-align: center;
-      font: 500 2.5em Poppins, sans-serif;
     }
   }
 
   .Contact--Container {
     display: flex;
     flex-flow: row wrap;
+    gap: 4rem;
     justify-content: space-around;
     margin: auto;
-    gap: 4rem;
 
     .Info--Container {
       display: flex;
@@ -36,10 +36,9 @@
         .Icon {
           @include themify() {
             color: t($primary);
+            font-size: 2em;
+            margin-top: .25rem;
           }
-
-          margin-top: .25rem;
-          font-size: 2em;
         }
 
         .Container {
@@ -50,14 +49,14 @@
           .Name {
             @include themify() {
               color: t($text);
-              font: 500 1.45em Poppins, sans-serif;;
+              font: $small-heading-font;
             }
           }
 
           span {
             @include themify() {
               color: t($textAlt);
-              font: 500 1em Poppins, sans-serif;;
+              font: $bold-small-font;
             }
           }
         }
@@ -65,9 +64,9 @@
     }
 
     .Form {
+      align-items: flex-start;
       display: flex;
       flex-flow: column nowrap;
-      align-items: flex-start;
       gap: 1rem;
 
       .Input, .TextArea {
@@ -82,13 +81,13 @@
         @include themify() {
           color: t($text);
           background: t($btnText);
-          box-shadow: 0 0 6px -2px t($shadow);
-          height: 3rem;
-          width: 25rem;
-          padding: 1rem;
           border: 0;
           border-radius: .4rem;
-          font: $text-font;
+          box-shadow: 0 0 6px -2px t($shadow);
+          font: $small-font;
+          height: 3rem;
+          padding: 1rem;
+          width: 25rem;
         }
       }
 
@@ -96,43 +95,41 @@
         @include themify() {
           color: t($text);
           background: t($btnText);
-          box-shadow: 0 0 6px -2px t($shadow);
-          height: 100%;
-          width: 25rem;
-          padding: 1rem;
           border: 0;
           border-radius: .4rem;
+          box-shadow: 0 0 6px -2px t($shadow);
+          font: $small-font;
+          height: 100%;
+          padding: 1rem;
           resize: vertical;
-          font: $text-font;
+          width: 25rem;
         }
       }
 
       .Button {
         @include themify() {
-          color: t($btnText);
+          @include smooth();
+          align-items: center;
+          align-self: flex-start;
           background-color: t($primary);
+          border: 0;
+          border-radius: $btn-radius;
+          color: t($btnText);
+          cursor: pointer;
+          display: flex;
+          font: $bold-small-font;
+          gap: .25em;
+          height: 2.5em;
+          justify-content: center;
           outline: $btn-outline solid t($primary);
+          padding: $btn-padding;
+          text-decoration: none;
 
           &:hover {
-            color: t($primary);
             background: transparent;
+            color: t($primary);
           }
-      
-          @include smooth();
         }
-
-        align-self: flex-start;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 2.5em;
-        padding: $btn-padding;
-        border: 0;
-        border-radius: $btn-radius;
-        text-decoration: none;
-        gap: .25em;
-        font: $link-font;
-        cursor: pointer;
 
         .Icon {
           font-size: 1.15em;

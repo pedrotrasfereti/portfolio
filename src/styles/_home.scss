@@ -23,13 +23,13 @@
 
 .Home {
   @include themify() {
-    background-color: t($body);
-    display: flex;
+    @include smooth();
     align-items: center;
-    width: $default-width;
+    background: t($body);
+    display: flex;
     min-height: $home-height;
     padding: $home-padding;
-    @include smooth();
+    width: $default-width;
   }
 
   .Content--Container {
@@ -37,67 +37,64 @@
     flex-flow: row nowrap;
 
     .Social {
+      align-items: center;
       display: flex;
       flex-flow: column nowrap;
-      align-items: center;
-      margin: 2rem 3.5rem 0 0;
       gap: 1.5rem;
+      margin: 2rem 3.5rem 0 0;
   
       .Icon {
         @include themify() {
+          @include smooth();
           color: t($primary);
+          font-size: 1.5em;
 
           &:hover {
             color: t($secondary);
           }
-
-          @include smooth();
         }
-
-        font-size: 1.5em;
       }
     }
 
     .Hero {
       .Heading {
         @include themify() {
-          color: t($text);
           @include smooth();
+          color: t($text);
+          font: $x-large-heading-font;
+          width: 700px;
         }
-    
-        width: 700px;
-        font: $heading-font;
       }
 
       .Description {
         @include themify() {
+          @include smooth();
           color: t($textAlt);
+          font: $medium-font;
           margin-top: .5em;
           width: 37em;
-          font: $body-font;
-          @include smooth();
         }
       }
 
       .Button {
         @include themify() {
-          color: t($btnText);
-          background-color: t($primary);
-          outline: $btn-outline solid t($primary);
-          display: inline-block;
-          height: 2.5em;
-          margin-top: 2em;
-          padding: $btn-padding;
+          @include smooth();
+          background: t($primary);
           border: transparent;
           border-radius: $btn-radius;
-          text-decoration: none;
-          font: $link-font;
+          color: t($btnText);
           cursor: pointer;
-          @include smooth();
+          display: inline-block;
+          font: $bold-small-font;
+          height: 2.5em;
+          margin-top: 2em;
+          outline: $btn-outline solid t($primary);
+          padding: $btn-padding;
+          text-decoration: none;
   
           &:hover {
-            color: t($primary);
             background: transparent;
+            color: t($primary);
           }
         }
       }
@@ -105,16 +102,16 @@
       
     .Link {
       @include themify() {
-        color: t($primary);
-        position: absolute;
-        left: 8.15rem;
-        bottom: 2em;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font: $link-font;
-        cursor: pointer;
         @include smooth();
+        align-items: center;
+        bottom: 2em;
+        color: t($primary);
+        cursor: pointer;
+        display: flex;
+        font: $bold-small-font;
+        left: 8.15rem;
+        position: absolute;
+        text-decoration: none;
 
         .Mouse {
           font-size: 1.5em;
@@ -133,19 +130,19 @@
   }
 
   .Illustration--Container {
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
 
     .Illustration {
       @include themify() {
+        @include smooth();
         background: url(t($illustration)) no-repeat;
         background-position: center;
         background-size: contain;
         min-height: 85vh;
         min-width: 100%;
-        @include smooth();
       }
     }
   }

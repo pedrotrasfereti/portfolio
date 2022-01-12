@@ -2,24 +2,23 @@
 
 .About {
   @include themify() {
+    align-items: center;
     background: t($body);
     display: flex;
-    align-items: center;
-    width: $default-width;
     min-height: $section-height;
+    width: $default-width;
   }
 
   .Image {
     @include themify() {
       background: t($borderSpecial);
+      border: transparent;
+      border-radius: 50%;
+      height: 16%;
+      margin-left: auto;
+      padding: .2em;
+      width: 16%;
     }
-
-    width: 16%;
-    height: 16%;
-    border: transparent;
-    border-radius: 50%;
-    margin-left: auto;
-    padding: .2em;
   }
 
   .Content {
@@ -30,19 +29,17 @@
     .Heading {
       @include themify() {
         color: t($text);
+        font: $medium-heading-font;
       }
-
-      font: 500 2.5em Poppins, sans-serif;
     }
   
     .Paragraph {
       @include themify() {
         color: t($textAlt);
+        font: $medium-font;
+        margin-top: 2rem;
+        max-width: 40rem;
       }
-
-      margin-top: 2rem;
-      max-width: 40rem;
-      font: $body-font;
     }
   }
 }

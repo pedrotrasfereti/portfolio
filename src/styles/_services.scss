@@ -3,86 +3,83 @@
 .Services {
   @include themify() {
     background-color: t($body);
-    width: $default-width;
     min-height: $section-height;
     padding: 2.6rem;
+    width: $default-width;
   }
 
   .Heading {
     @include themify() {
       color: t($text);
+      font: $medium-heading-font;
+      padding: 2.6rem 0;
+      text-align: center;
     }
-
-    padding: 2.6rem 0;
-    text-align: center;
-    font: 500 2.5em Poppins, sans-serif;
   }
 
   .Services--Container {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     gap: 2rem;
+    justify-content: center;
     margin: auto;
+    width: 100%;
 
     .Service {
       @include themify() {
         background: t($bodyAlt);
+        border: 0;
+        border-radius: 1em;
         box-shadow: 0 0 6px -2px t($shadow);
       }
-
-      border: 0;
-      border-radius: 1em;
 
       .Decoration {
         @include themify() {
           background: t($borderSpecial);
+          display: block;
+          height: .25em;
+          margin: 1.25em 0 auto 0;
+          width: 100%;
         }
-
-        display: block;
-        height: .25em;
-        width: 100%;
-        margin: 1.25em 0 auto 0;
       }
 
       .Content {
+        align-items: flex-start;
         display: flex;
         flex-flow: column nowrap;
-        align-items: flex-start;
+        height: 20rem;
         justify-content: space-around;
         padding: 1.5rem;
         padding-top: 5.5rem;
         width: 18rem;
-        height: 20rem;
 
         .Icon {
           @include themify() {
             color: t($primary);
+            font-size: 2em;
           }
-  
-          font-size: 2em;
         }
   
         .Title {
           @include themify() {
             color: t($text);
+            font: $medium-title-font;
           }
-  
-          font: 500 1.5em Poppins, sans-serif;
         }
 
         .Description {
           @include themify() {
             color: t($textAlt);
+            font: $small-font;
           }
-  
-          font: 400 1em Poppins, sans-serif;
         }
   
         .Link {
           @include themify() {
             color: t($primary);
+            cursor: pointer;
+            font: $bold-small-font;
+            text-decoration: none;
   
             &:hover {
               color: t($secondary);
@@ -93,11 +90,7 @@
               }
             }
           }
-  
-          text-decoration: none;
-          font: $link-font;
-          cursor: pointer;
-  
+
           .Arrow {
             font-size: 1em;
             margin-right: 1em;

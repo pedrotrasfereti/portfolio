@@ -9,31 +9,30 @@
 .Skills {
   @include themify() {
     background-color: t($body);
-    width: $default-width;
     min-height: $section-height;
+    width: $default-width;
   }
 
   .Heading {
     @include themify() {
       color: t($text);
+      font: $medium-heading-font;
+      padding: 2.6rem 0;
+      text-align: center;
     }
-
-    padding: 2.6rem 0;
-    text-align: center;
-    font: 500 2.5em Poppins, sans-serif;
   }
 
   .Dropdown--Container {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 15rem;
     gap: 1.75rem;
     margin: auto;
+    padding: 0 15rem;
 
     .Dropdown {
+      align-items: flex-end;
       display: flex;
       flex-flow: column nowrap;
-      align-items: flex-end;
 
       .Hidden {
         display: none;
@@ -41,15 +40,15 @@
 
       .DdHeader {
         @include themify() {
+          align-items: center;
           background: t($bodyAlt);
-          height: 4.5rem;
-          width: 26rem;
-          box-shadow: 0 0 6px -2px t($shadow);
           border: 0;
           border-radius: 1em;
+          box-shadow: 0 0 6px -2px t($shadow);
           display: flex;
-          align-items: center;
+          height: 4.5rem;
           position: relative;
+          width: 26rem;
           z-index: 1;
 
           .Icon {
@@ -61,13 +60,13 @@
           .Container {
             .Title {
               color: t($text);
-              font: 500 1.2em Poppins, sans-serif;
+              font: $title-font;
             }
 
             .Link {
               color: t($textAlt);
-              text-decoration: none;
               font: $x-small-font;
+              text-decoration: none;
 
               &:hover {
                 color: t($text);
@@ -76,15 +75,15 @@
           }
 
           .Button {
-            background: none;
-            color: t($text);
             appearance: none;
-            margin: 0 1.5rem 0 auto;
-            padding: .2rem .2rem 0 .2rem;
+            background: none;
             border: none;
             border-radius: 50%;
-            font-size: 1.2em;
+            color: t($text);
             cursor: pointer;
+            font-size: 1.2em;
+            margin: 0 1.5rem 0 auto;
+            padding: .2rem .2rem 0 .2rem;
 
             &:hover {
               background: t($btnHover);
@@ -98,49 +97,49 @@
       }
 
       .DropdownList {
-        list-style: none;
-        padding: 0;
-        background: none;
-        width: 25rem;
-        height: 10rem;
-        overflow-y: scroll;
         animation: .7s slideDown forwards;
+        background: none;
+        height: 10rem;
+        list-style: none;
+        overflow-y: scroll;
+        padding: 0;
+        width: 25rem;
 
         .Skill {
-          width: 100%;
           display: flex;
           flex-flow: column nowrap;
           padding: .5rem 0;
+          width: 100%;
 
           .Container {
             @include themify() {
-              color: t($text);
-              width: 100%;
-              display: flex;
               align-items: center;
+              color: t($text);
+              display: flex;
+              font: $small-font;
               justify-content: space-between;
               padding: 1rem;
-              font: $text-font;
+              width: 100%;
             }
           }
 
           .ProgressBar {
             @include themify() {
               background: t($border);
-              height: .375rem;
-              width: calc(100% - 2rem);
-              margin-left: 1rem;
               border: 0;
               border-radius: 1em;
+              height: .375rem;
+              margin-left: 1rem;
+              width: calc(100% - 2rem);
             }
 
             .Ability {
               @include themify() {
                 background: t($primary);
-                height: .375rem;
-                width: 80%;
                 border: 0;
                 border-radius: 1em;
+                height: .375rem;
+                width: 80%;
               }
             }
           }

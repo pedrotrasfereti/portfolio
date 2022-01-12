@@ -22,12 +22,22 @@ $gradient-light: linear-gradient(170deg, #0FFA7D 0%, #0FF2FA 100%);
 $gradient-dark: linear-gradient(170deg, #1DD573 0%, #1DCED5 100%);
 
 /*-================== FONTS ===================-*/
-$title-font: 500 1.15em Poppins, sans-serif;
-$text-font: 400 1em Poppins, sans-serif;
-$heading-font: 500 4.2em Poppins, sans-serif;
-$body-font: 400 1.11em Poppins, sans-serif;
-$link-font: 500 1.04em Poppins, sans-serif;
+// Text
 $x-small-font: 400 0.9em Poppins, sans-serif;
+$small-font: 400 1em Poppins, sans-serif;
+$bold-small-font: 500 1em Poppins, sans-serif;
+$medium-font: 400 1.11em Poppins, sans-serif;
+
+// Title
+$title-font: 500 1.2em Poppins, sans-serif;
+$medium-title-font: 500 1.5em Poppins, sans-serif;
+$big-title-font: 500 2em Poppins, sans-serif;
+
+// Heading
+$x-large-heading-font: 500 4.2em Poppins, sans-serif;
+$big-heading-font: 500 3em Poppins, sans-serif;
+$medium-heading-font: 500 2.5em Poppins, sans-serif;
+$small-heading-font: 500 1.45em Poppins, sans-serif;
 
 /*-================== SIZES ===================-*/
 $header-height: 4rem;

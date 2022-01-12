@@ -1,40 +1,39 @@
 @import './themes';
 
-@media only screen and (max-width: 1215px) {
-  .Visible {
-    display: none !important;
-  }
+// @media only screen and (max-width: 1215px) {
+//   .Visible {
+//     display: none !important;
+//   }
 
-  .Center {
-    display: flex !important;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    transition: 1s;
-  }
-}
+//   .Center {
+//     display: flex !important;
+//     flex-flow: column nowrap;
+//     justify-content: flex-start;
+//     transition: 1s;
+//   }
+// }
 
 .Portfolio {
   @include themify() {
     background-color: t($body);
-    width: $default-width;
     min-height: $section-height;
     padding: 2.6rem;
+    width: $default-width;
   }
 
   .Heading {
     @include themify() {
       color: t($text);
+      font: $medium-heading-font;
+      padding: 2.6rem 0;
+      text-align: center;
     }
-
-    padding: 2.6rem 0;
-    text-align: center;
-    font: 500 2.5em Poppins, sans-serif;
   }
 
   .Slide {
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 
     .Cards--Container {
       display: flex;
@@ -43,63 +42,57 @@
       .Card {
         @include themify() {
           background: t($bodyAlt);
+          border: 0;
+          border-radius: 1rem;
           box-shadow: 0 0 6px -2px t($shadow);
-        }
+          display: none;
+          height: 22rem;
+          opacity: 0.7;
+          padding: 1.5rem;
+          position: relative;
+          transform: scale(0.9);
+          width: 20rem;
 
-        .Icon {
-          @include themify() {
+          .Icon {
+            @include smooth();
             color: t($primary);
+            font-size: 2.5em;
+            position: absolute;
+            right: .9rem;
+            top: 2rem;
 
             &:hover {
               color: t($secondary);
-              @include smooth();
             }
           }
-  
-          position: absolute;
-          top: 2rem;
-          right: .9rem;
-          font-size: 2.5em;
         }
-
-        position: relative;
-        display: none;
-        opacity: 0.7;
-        padding: 1.5rem;
-        height: 22rem;
-        width: 20rem;
-        border: 0;
-        border-radius: 1rem;
-        transform: scale(0.9);
       }
 
       .Visible {
-        display: flex;
+        display: flex !important;
         flex-flow: column nowrap;
         justify-content: flex-start;
         transition: 1s;
       }
 
       .Center {
-        opacity: 1;
-        transform: scale(1);
+        opacity: 1 !important;
+        transform: scale(1) !important;
       }
 
       .RepoName {
         @include themify() {
           color: t($text);
+          font: $big-title-font;
         }
-
-        font: 500 2em Poppins, sans-serif;
       }
 
       .RepoDescription {
         @include themify() {
           color: t($textAlt);
+          font: $medium-font;
+          margin-top: 1.25rem;
         }
-
-        margin-top: 1.25rem;
-        font: $body-font;
       }
 
       .Topics--Container {
@@ -111,15 +104,14 @@
         .Topic {
           @include themify() {
             background: t($bubble);
-            color: t($text);
+            border: 0;
+            border-radius: 1em;
             box-shadow: 0 0 6px -2px t($shadow);
+            color: t($text);
+            display: inline-block;
+            font: $x-small-font;
+            padding: .2rem 1rem;
           }
-  
-          display: inline-block;
-          padding: .2rem 1rem;
-          border: 0;
-          border-radius: 1em;
-          font: $x-small-font;
         }
 
         .Language {
@@ -132,24 +124,21 @@
 
       .RepoBtn {
         @include themify() {
-          color: t($btnText);
-          background-color: t($primary);
-          outline: $btn-outline solid t($primary);
-
           @include smooth();
+          background-color: t($primary);
+          border-radius: $btn-radius;
+          color: t($btnText);
+          cursor: none;
+          display: inline-block;
+          font: $bold-small-font;
+          height: 2.5em;
+          margin-top: auto;
+          outline: $btn-outline solid t($primary);
+          padding: $btn-padding;
+          pointer-events: none;
+          text-align: center;
+          text-decoration: none;
         }
-
-        display: inline-block;
-        height: 2.5em;
-        padding: $btn-padding;
-        margin-top: auto;
-        background: none;
-        border-radius: $btn-radius;
-        text-align: center;
-        text-decoration: none;
-        pointer-events: none;
-        cursor: none;
-        font: $link-font;
       }
 
       .Center .RepoBtn {
@@ -158,8 +147,8 @@
 
         &:hover {
           @include themify() {
-            color: t($primary);
             background: transparent;
+            color: t($primary);
           }
         }
       }
@@ -167,35 +156,33 @@
 
     .Button {
       @include themify() {
+        @include smooth();
+        appearance: none;
+        background: none;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 4rem;
+        width: 4rem;
+
         &:hover {
           background: t($btnHover);
         }
-  
+
         &:active {
+          background: t($btnActive);
+
           .Icon {
             color: t($secondary);
           }
-  
-          background: t($btnActive);
         }
-  
-        @include smooth();
       }
-  
-      appearance: none;
-      background: none;
-      border: 0;
-      border-radius: 50%;
-      height: 4rem;
-      width: 4rem;
-      cursor: pointer;
-  
+
       .Icon {
         @include themify() {
           color: t($primary);
+          font-size: 4em;
         }
-  
-        font-size: 4em;
       }
     }
   }

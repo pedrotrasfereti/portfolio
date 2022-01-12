@@ -6,16 +6,16 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    width: $default-width;
     min-height: $footer-height;
     padding: 2.75em;
+    width: $default-width;
   }
 
   .Content--Container {
+    align-items: baseline;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: baseline;
 
     .Container {
       display: flex;
@@ -33,30 +33,28 @@
     .Container .Subtitle, .Copyright {
       @include themify() {
         color: t($textAlt);
-        font: $text-font;
+        font: $small-font;
       }
     }
 
     .Social {
+      align-items: center;
       align-self: flex-start;
       display: flex;
       flex-flow: row nowrap;
-      align-items: center;
       height: 1.5rem;
       gap: 1.5rem;
   
       .SocialIcon {
         @include themify() {
+          @include smooth();
           color: t($primary);
-  
+          font-size: 1.5em;
+
           &:hover {
             color: t($secondary);
           }
-  
-          @include smooth();
         }
-  
-        font-size: 1.5em;
       }
     }
   }
