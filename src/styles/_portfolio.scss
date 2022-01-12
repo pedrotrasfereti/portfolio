@@ -1,17 +1,17 @@
 @import './themes';
 
-// @media only screen and (max-width: 1215px) {
-//   .Visible {
-//     display: none !important;
-//   }
+@media only screen and (max-width: 1215px) {
+  .Visible {
+    display: none !important;
+  }
 
-//   .Center {
-//     display: flex !important;
-//     flex-flow: column nowrap;
-//     justify-content: flex-start;
-//     transition: 1s;
-//   }
-// }
+  .Center {
+    display: flex !important;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    transition: 1s;
+  }
+}
 
 .Portfolio {
   @include themify() {
@@ -42,57 +42,63 @@
       .Card {
         @include themify() {
           background: t($bodyAlt);
-          border: 0;
-          border-radius: 1rem;
           box-shadow: 0 0 6px -2px t($shadow);
-          display: none;
-          height: 22rem;
-          opacity: 0.7;
-          padding: 1.5rem;
-          position: relative;
-          transform: scale(0.9);
-          width: 20rem;
+        }
 
-          .Icon {
-            @include smooth();
+        .Icon {
+          @include themify() {
             color: t($primary);
-            font-size: 2.5em;
-            position: absolute;
-            right: .9rem;
-            top: 2rem;
 
             &:hover {
               color: t($secondary);
+              @include smooth();
             }
           }
+  
+          position: absolute;
+          top: 2rem;
+          right: .9rem;
+          font-size: 2.5em;
         }
+
+        position: relative;
+        display: none;
+        opacity: 0.7;
+        padding: 1.5rem;
+        height: 22rem;
+        width: 20rem;
+        border: 0;
+        border-radius: 1rem;
+        transform: scale(0.9);
       }
 
       .Visible {
-        display: flex !important;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
         transition: 1s;
       }
 
       .Center {
-        opacity: 1 !important;
-        transform: scale(1) !important;
+        opacity: 1;
+        transform: scale(1);
       }
 
       .RepoName {
         @include themify() {
           color: t($text);
-          font: $big-title-font;
         }
+
+        font: $big-title-font;
       }
 
       .RepoDescription {
         @include themify() {
           color: t($textAlt);
-          font: $medium-font;
-          margin-top: 1.25rem;
         }
+
+        margin-top: 1.25rem;
+        font: $medium-font;
       }
 
       .Topics--Container {
@@ -104,14 +110,15 @@
         .Topic {
           @include themify() {
             background: t($bubble);
-            border: 0;
-            border-radius: 1em;
-            box-shadow: 0 0 6px -2px t($shadow);
             color: t($text);
-            display: inline-block;
-            font: $x-small-font;
-            padding: .2rem 1rem;
+            box-shadow: 0 0 6px -2px t($shadow);
           }
+  
+          display: inline-block;
+          padding: .2rem 1rem;
+          border: 0;
+          border-radius: 1em;
+          font: $x-small-font;
         }
 
         .Language {
@@ -126,19 +133,21 @@
         @include themify() {
           @include smooth();
           background-color: t($primary);
-          border-radius: $btn-radius;
           color: t($btnText);
-          cursor: none;
-          display: inline-block;
-          font: $bold-small-font;
-          height: 2.5em;
-          margin-top: auto;
           outline: $btn-outline solid t($primary);
-          padding: $btn-padding;
-          pointer-events: none;
-          text-align: center;
-          text-decoration: none;
         }
+
+        display: inline-block;
+        height: 2.5em;
+        padding: $btn-padding;
+        margin-top: auto;
+        background: none;
+        border-radius: $btn-radius;
+        text-align: center;
+        text-decoration: none;
+        pointer-events: none;
+        cursor: none;
+        font: $bold-small-font;
       }
 
       .Center .RepoBtn {
@@ -147,8 +156,8 @@
 
         &:hover {
           @include themify() {
-            background: transparent;
             color: t($primary);
+            background: transparent;
           }
         }
       }
