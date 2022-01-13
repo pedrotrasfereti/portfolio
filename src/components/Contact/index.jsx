@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="Container">
               <h2 className="Name">Local</h2>
               <span className="Text">
-                R. Gago Coutinho, 10 - Campinas/SP
+                Campinas/SP
               </span>
             </div>
           </div>
