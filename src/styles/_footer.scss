@@ -49,7 +49,7 @@
       .Title {
         @include themify() {
           color: t($text);
-          font: $medium-title-font;
+          font: $xx-small-heading-font;
         }
       }
 

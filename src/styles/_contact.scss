@@ -111,42 +111,54 @@
       flex-flow: column nowrap;
       gap: 1rem;
 
-      .Input, .TextArea {
-        &:focus {
+      .Input--Container {
+        .Status {
           @include themify() {
-            outline: $btn-outline solid t($primary);
+            color: #E85EAE;
+            display: block;
+            font: $x-small-font;
+            font-size: .85rem;
+            margin-top: .35rem;
           }
         }
-      }
-
-      .Input {
-        @include themify() {
-          @include smooth();
-          color: t($text);
-          background: t($btnText);
-          border: 0;
-          border-radius: .4rem;
-          box-shadow: 0 0 6px -2px t($shadow);
-          font: $small-font;
-          height: $input-height;
-          padding: 1rem;
-          width: $input-width;
+  
+        .Input, .TextArea {
+          &:focus {
+            @include themify() {
+              outline: $btn-outline solid t($primary);
+            }
+          }
         }
-      }
+  
+        .Input {
+          @include themify() {
+            @include smooth();
+            color: t($text);
+            background: t($btnText);
+            border: 0;
+            border-radius: .4rem;
+            box-shadow: 0 0 6px -2px t($shadow);
+            font: $small-font;
+            height: $input-height;
+            padding: 1rem;
+            width: $input-width;
+          }
+        }
 
-      .TextArea {
-        @include themify() {
-          @include smooth();
-          color: t($text);
-          background: t($btnText);
-          border: 0;
-          border-radius: .4rem;
-          box-shadow: 0 0 6px -2px t($shadow);
-          font: $small-font;
-          height: $textarea-height;
-          padding: 1rem;
-          resize: none;
-          width: $input-width;
+        .TextArea {
+          @include themify() {
+            @include smooth();
+            color: t($text);
+            background: t($btnText);
+            border: 0;
+            border-radius: .4rem;
+            box-shadow: 0 0 6px -2px t($shadow);
+            font: $small-font;
+            min-height: $textarea-height;
+            padding: 1rem;
+            resize: none;
+            width: $input-width;
+          }
         }
       }
 
