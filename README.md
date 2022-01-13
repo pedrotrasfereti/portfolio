@@ -11,3 +11,5 @@ Portifólio Profissional
 - [**Axios**](https://axios-http.com/) : Cliente HTTP para o navegador
 - [**GitHub API**](https://docs.github.com/en/rest) : API para buscar repositórios no GitHub
 - [**EmailJs**](https://www.emailjs.com/) : Serviço para enviar e-mail com JavaScript
+
+Todos os componentes presentes na página foram desenvolvidos por mim.
