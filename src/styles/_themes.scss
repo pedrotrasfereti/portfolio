@@ -14,6 +14,8 @@ $default: (
   btnHover: $black-squeeze,
   btnActive: $alice-blue,
   bubble: $white-lilac,
+  scrollThumb: $scroll-thumb-light,
+  scrollTrack: transparent,
   shadow: $lavender-gray,
   switch: $lavender-gray,
   border: $lavender-gray,
@@ -34,6 +36,8 @@ $dark: (
   btnHover: $east-bay,
   btnActive: $blue-yonder,
   bubble: $east-bay,
+  scrollThumb: $scroll-thumb-dark,
+  scrollTrack: $scroll-track-dark,
   shadow: transparent,
   switch: $big-stone,
   border: $blue-yonder,
@@ -84,6 +88,8 @@ $btnText: 'btnText';
 $btnHover: 'btnHover';
 $btnActive: 'btnActive';
 $bubble: 'bubble';
+$scrollThumb: 'scrollThumb';
+$scrollTrack: 'scrollTrack';
 $shadow: 'shadow';
 $switch: 'switch';
 $border: 'border';

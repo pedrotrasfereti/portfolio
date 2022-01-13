@@ -126,14 +126,30 @@
         font: $x-large-title-font;
       }
 
+      .RepoDescription::-webkit-scrollbar-thumb {
+        @include themify() {
+          background: t($scrollThumb);
+        }
+      }
+
+      .RepoDescription::-webkit-scrollbar {
+        @include themify() {
+          width: 6px;
+          height: 9px;
+          background: t($scrollTrack);
+        }
+      }
+
       .RepoDescription {
         @include themify() {
           color: t($textAlt);
+          scrollbar-color: t($scrollThumb) t($scrollTrack);
+          scrollbar-width: auto;
         }
 
         font: $small-font;
         margin-top: 1.25rem;
-        max-height: 4.5rem;
+        max-height: 4.75rem;
         overflow-y: auto;
       }
 

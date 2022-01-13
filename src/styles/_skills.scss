@@ -135,14 +135,32 @@
         }
       }
 
+      .DropdownList::-webkit-scrollbar-thumb {
+        @include themify() {
+          background: t($scrollThumb);
+        }
+      }
+
+      .DropdownList::-webkit-scrollbar {
+        @include themify() {
+          width: 6px;
+          height: 9px;
+          background: t($scrollTrack);
+        }
+      }
+
       .DropdownList {
-        animation: .7s slideDown forwards;
-        background: none;
-        height: 10rem;
-        list-style: none;
-        overflow-y: auto;
-        padding: 0;
-        width: 25rem;
+        @include themify() {
+          animation: .7s slideDown forwards;
+          background: none;
+          scrollbar-color: t($scrollThumb) t($scrollTrack);
+          scrollbar-width: auto;
+          height: 10rem;
+          list-style: none;
+          overflow-y: auto;
+          padding: 0;
+          width: 25rem;
+        }
 
         .Skill {
           display: flex;
