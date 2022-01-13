@@ -24,17 +24,31 @@
 
 @media only screen and (max-width: 1000px) {
   .Social .Icon {
-    font-size: $small-icon !important;
+    font-size: $x-small-icon !important;
   }
 
   .Hero {
     .Heading {
-      font: $big-heading-font !important;
+      font: $x-large-heading-font !important;
     }
 
     .Description {
       font: $small-font !important;
       max-width: 29em !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Hero {
+    .Heading {
+      font: $big-heading-font !important;
+      width: 20rem;
+    }
+
+    .Description {
+      font: $x-small-font !important;
+      max-width: 20rem !important;
     }
   }
 }
@@ -65,7 +79,7 @@
         @include themify() {
           @include smooth();
           color: t($primary);
-          font-size: $medium-icon;
+          font-size: $small-icon;
 
           &:hover {
             color: t($secondary);
@@ -79,7 +93,7 @@
         @include themify() {
           @include smooth();
           color: t($text);
-          font: $x-large-heading-font;
+          font: $xx-large-heading-font;
           max-width: 38rem;
         }
       }
@@ -89,7 +103,7 @@
           @include smooth();
           color: t($textAlt);
           font: $medium-font;
-          line-height: 2rem;
+          line-height: $line-height !important;
           margin-top: .5em;
           width: 37em;
         }
@@ -139,7 +153,7 @@
           color: t($secondary);
 
           .Arrow {
-            font-size: $x-small-icon;
+            font-size: $xx-small-icon;
             transform: translateY(15%);
             transition: .2s;
           }

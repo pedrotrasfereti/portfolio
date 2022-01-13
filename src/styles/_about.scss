@@ -1,10 +1,11 @@
 @import './themes';
 
-@media only screen and (max-width: 957px) {
+@media only screen and (max-width: 1027px) {
   .About {
     .Image {
       height: 12rem !important;
       width: 12rem !important;
+      margin-right: 0 !important;
     }
 
     .Heading {
@@ -13,22 +14,29 @@
     }
 
     .Paragraph {
-      font: $small-font !important;
       text-align: center !important;
+      margin-left: 3.5rem;
     }
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .About {
+    .Heading {
+      font: $x-small-heading-font !important;
+    }
+
     .Image {
       height: 11rem !important;
       width: 11rem !important;
     }
+
+    .Paragraph {
+      font: $x-small-font !important;
+      margin-left: 0 !important;
+    }
   }
 }
-
-
 
 .About {
   @include themify() {
@@ -40,6 +48,7 @@
     justify-content: center;
     min-height: $section-height;
     width: $default-width;
+    padding: 3.5rem;
   }
 
   .Image {
@@ -50,6 +59,7 @@
       height: 13rem;
       padding: .2rem;
       width: 13rem;
+      margin-right: 3.5rem;
     }
   }
 
@@ -57,7 +67,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1.75em;
-    padding: 1.75em 3.5rem 3.5rem;
+    padding-top: 1.75em;
 
     .Heading {
       @include themify() {
@@ -70,7 +80,7 @@
       @include themify() {
         color: t($textAlt);
         font: $medium-font;
-        line-height: 2rem;
+        line-height: $line-height !important;
         max-width: 40rem;
       }
     }

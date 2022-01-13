@@ -1,6 +1,6 @@
 @import './themes';
 
-@media only screen and (max-width: 1347px) {
+@media only screen and (max-width: 1358px) {
   .Skills {
     .Dropdown--Container {
       justify-content: center;
@@ -13,17 +13,25 @@
     .Heading {
       font: $small-heading-font !important;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Skills {
+    .Heading {
+      font: $x-small-heading-font !important;
+    }
 
     .DdHeader {
       height: $small-skill-height !important;
       width: $small-skill-width !important;
 
       .Title {
-        font: 500 1.1em Poppins, sans-serif !important;
+        font: $bold-small-font !important;
       }
 
       .Button {
-        font-size: $x-small-icon !important;
+        font-size: $xx-small-icon !important;
       }
     }
   }
@@ -33,7 +41,7 @@
   @include themify() {
     @include smooth();
     background-color: t($body);
-    min-height: $section-height;
+    min-height: calc($section-height + .75rem);
     width: $default-width;
   }
 
@@ -41,7 +49,7 @@
     @include themify() {
       color: t($text);
       font: $medium-heading-font;
-      padding: 2.6rem 0;
+      padding: 5.15rem 0 2.6rem;
       text-align: center;
     }
   }
@@ -78,14 +86,14 @@
 
           .Icon {
             color: t($primary);
-            font-size: $big-icon;
+            font-size: $medium-icon;
             margin: 0 1.5rem;
           }
 
           .Container {
             .Title {
               color: t($text);
-              font: $title-font;
+              font: $small-title-font;
             }
 
             .Link {
@@ -112,7 +120,7 @@
             border-radius: 50%;
             color: t($text);
             cursor: pointer;
-            font-size: $small-icon;
+            font-size: $x-small-icon;
             margin: 0 1.5rem 0 auto;
             padding: .2rem .2rem 0 .2rem;
 
@@ -132,7 +140,7 @@
         background: none;
         height: 10rem;
         list-style: none;
-        overflow-y: scroll;
+        overflow-y: auto;
         padding: 0;
         width: 25rem;
 

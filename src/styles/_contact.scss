@@ -6,12 +6,18 @@
       font: $small-heading-font !important;
     }
 
-    .Name {
-      font: $title-font !important;
-    }
+    .Info--Container {
+      .Icon {
+        font-size: $medium-icon !important;
+      }
 
-    .Text {
-      font: $x-small-font !important;
+      .Name {
+        font: $small-title-font !important;
+      }
+  
+      .Text {
+        font: $x-small-font !important;
+      }
     }
 
     .Form {
@@ -23,6 +29,14 @@
       .TextArea {
         width: $small-input-width !important;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 600) {
+  .Contact {
+    .Heading {
+      font: $x-small-heading-font !important;
     }
   }
 }
@@ -64,7 +78,7 @@
         .Icon {
           @include themify() {
             color: t($primary);
-            font-size: $x-large-icon;
+            font-size: $big-icon;
             margin-top: .25rem;
           }
         }
@@ -77,7 +91,7 @@
           .Name {
             @include themify() {
               color: t($text);
-              font: $x-small-heading-font;
+              font: $xx-small-heading-font;
             }
           }
 
@@ -162,7 +176,7 @@
         }
 
         .Icon {
-          font-size: $small-icon;
+          font-size: $x-small-icon;
         }
       }
     }

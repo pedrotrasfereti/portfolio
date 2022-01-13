@@ -14,6 +14,20 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .Header {
+    .Navbar {
+      .Link {
+        font: $x-small-font !important;
+      }
+  
+      .Label {
+        font: $x-small-font !important;
+      }
+    }
+  }
+}
+
 .Header {
   @include themify() {
     @include smooth();
@@ -35,7 +49,7 @@
       @include smooth();
       color: t($text);
       cursor: pointer;
-      font: $title-font;
+      font: $small-title-font;
       margin: $title-margin;
 
       &:hover {
@@ -53,7 +67,7 @@
       border-radius: 50%;
       color: t($primary);
       cursor: pointer;
-      font-size: $small-icon;
+      font-size: $x-small-icon;
       padding: .4rem .4rem .1rem .4rem;
 
       &:hover {

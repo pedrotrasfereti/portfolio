@@ -22,6 +22,27 @@
     .Heading {
       font: $small-heading-font !important;
     }
+
+    .Card {
+      height: $small-card-height !important;
+      width: $small-card-width !important;
+    }
+
+    .Button .Icon {
+      font-size: $x-large-icon !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Portfolio {
+    .Heading {
+      font: $x-small-heading-font !important;
+    }
+
+    .Button .Icon {
+      font-size: $big-icon !important;
+    }
   }
 }
 
@@ -71,15 +92,15 @@
           position: absolute;
           top: 2rem;
           right: .9rem;
-          font-size: $x-large-icon;
+          font-size: $big-icon;
         }
 
         position: relative;
         display: none;
         opacity: 0.7;
         padding: 1.5rem;
-        height: 22rem;
-        width: 20rem;
+        height: $card-height;
+        width: $card-width;
         border: 0;
         border-radius: 1rem;
         transform: scale(0.9);
@@ -110,8 +131,10 @@
           color: t($textAlt);
         }
 
-        margin-top: 1.25rem;
         font: $small-font;
+        margin-top: 1.25rem;
+        max-height: 4.5rem;
+        overflow-y: auto;
       }
 
       .Topics--Container {

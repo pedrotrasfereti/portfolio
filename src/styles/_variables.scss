@@ -19,11 +19,12 @@ $gradient-dark: linear-gradient(170deg, #1DD573 0%, #1DCED5 100%);
 
 /*-================== FONTS ===================-*/
 // Icons
-$x-small-icon: 1.15em;
-$small-icon: 1.375em;
-$medium-icon: 1.5em;
-$big-icon: 1.75em;
-$x-large-icon: 2em;
+$xx-small-icon: 1.15em;
+$x-small-icon: 1.375em;
+$small-icon: 1.5em;
+$medium-icon: 1.75em;
+$big-icon: 2em;
+$x-large-icon: 3em;
 $xx-large-icon: 4em;
 
 // Text
@@ -34,17 +35,23 @@ $bold-small-font: 500 1em Poppins, sans-serif;
 $medium-font: 400 1.11em Poppins, sans-serif;
 
 // Title
-$title-font: 500 1.2em Poppins, sans-serif;
+$small-title-font: 500 1.2em Poppins, sans-serif;
+$title-font: 500 1.35em Poppins, sans-serif;
 $medium-title-font: 500 1.5em Poppins, sans-serif;
 $big-title-font: 500 1.75em Poppins, sans-serif;
 $x-large-title-font: 500 2em Poppins, sans-serif;
 
 // Heading
-$x-small-heading-font: 500 1.45em Poppins, sans-serif;
-$small-heading-font: 500 2em Poppins, sans-serif;
+$xx-small-heading-font: 500 1.45em Poppins, sans-serif;
+$x-small-heading-font: 500 2em Poppins, sans-serif;
+$small-heading-font: 500 2.25em Poppins, sans-serif;
 $medium-heading-font: 500 2.5em Poppins, sans-serif;
-$big-heading-font: 500 3.5em Poppins, sans-serif;
-$x-large-heading-font: 500 4em Poppins, sans-serif;
+$big-heading-font: 500 3em Poppins, sans-serif;
+$x-large-heading-font: 500 3.5em Poppins, sans-serif;
+$xx-large-heading-font: 500 4em Poppins, sans-serif;
+
+// Line Height
+$line-height: 2rem;
 
 /*-================== SIZES ===================-*/
 $header-height: 4rem;
@@ -53,21 +60,23 @@ $section-height: 32rem;
 $footer-height: 15rem;
 $default-width: 100%;
 
-// Skills
-$skill-height: 4.75rem;
-$skill-width: 26.25rem;
+// Dropdowns
 $small-skill-height: 4.5rem;
 $small-skill-width: 26rem;
+$skill-height: 4.75rem;
+$skill-width: 26.25rem;
 
-// Services
-
-// Portfolio
+// Cards
+$small-card-height: 20.9rem;
+$small-card-width: 17.5rem;
+$card-height: 21.4rem;
+$card-width: 18rem;
 
 // Contact Form
-$input-height: 3rem;
-$input-width: 25rem;
 $small-input-height: 2.8rem;
 $small-input-width: 21rem;
+$input-height: 3rem;
+$input-width: 25rem;
 $textarea-height: 100%;
 
 /*-================== SPACINGS ===================-*/

@@ -3,7 +3,7 @@
 @media only screen and (max-width: 1000px) {
   .Footer {
     .Title {
-      font: $title-font !important;
+      font: $small-title-font !important;
     }
 
     .Subtitle {
@@ -18,8 +18,8 @@
       gap: 1rem !important;
     }
 
-    .SocialIcon {
-      font-size: 1.35em !important;
+    .Icon {
+      font-size: $x-small-icon !important;
     }
   }
 }

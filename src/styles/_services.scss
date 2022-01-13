@@ -5,6 +5,27 @@
     .Heading {
       font: $small-heading-font !important;
     }
+
+    .Service .Content {
+      height: $small-card-height !important;
+      width: $small-card-width !important;
+
+      .Title {
+        font: $title-font !important;
+      }
+
+      .Icon {
+        font-size: $medium-icon !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600) {
+  .Services {
+    .Heading {
+      font: $x-small-heading-font !important;
+    }
   }
 }
 
@@ -41,14 +62,16 @@
         border: 0;
         border-radius: 1em;
         box-shadow: 0 0 6px -2px t($shadow);
+        position: relative;
       }
 
       .Decoration {
         @include themify() {
           background: t($borderSpecial);
           display: block;
-          height: .25em;
-          margin: 1.25em 0 auto 0;
+          height: .25rem;
+          position: absolute;
+          top: 1.25rem;
           width: 100%;
         }
       }
@@ -58,16 +81,16 @@
         align-items: flex-start;
         display: flex;
         flex-flow: column nowrap;
-        height: 20rem;
+        height: $card-height;
         justify-content: space-around;
         padding: 1.5rem;
         padding-top: 5.5rem;
-        width: 18rem;
+        width: $card-width;
 
         .Icon {
           @include themify() {
             color: t($primary);
-            font-size: $x-large-icon;
+            font-size: $big-icon;
           }
         }
   
@@ -103,7 +126,7 @@
           }
 
           .Arrow {
-            font-size: $x-small-icon;
+            font-size: $xx-small-icon;
             margin-right: 1em;
           }
         }
