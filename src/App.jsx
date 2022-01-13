@@ -9,6 +9,7 @@ import {
   Skills,
   Services,
   Portfolio,
+  ScrollBtn,
   Contact,
   Footer,
 } from './components'
@@ -24,6 +25,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <ScrollBtn />
     </main>
   )
 };
