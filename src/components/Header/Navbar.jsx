@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { FiMoon as Moon } from 'react-icons/fi'
 import { FiSun as Sun } from 'react-icons/fi'
 
-const Navbar = ({ inMenu }) => {
+const Navbar = ({ inMenu, toggleMenu }) => {
   const [theme, setTheme] = useState('light')
 
   function toggleDark(themeStr) {
@@ -17,10 +17,14 @@ const Navbar = ({ inMenu }) => {
     setTheme(themeStr)
   }
 
-  function select({ target }) {
-    const links = Array.from(document.getElementsByClassName('Link'))
-    links.forEach((link) => link.classList.remove('Selected'))
-    target.classList.add('Selected')
+  function handleClick({ target }) {
+    if (inMenu) {
+      toggleMenu()
+    } else {
+      const links = Array.from(document.getElementsByClassName('Link'))
+      links.forEach((link) => link.classList.remove('Selected'))
+      target.classList.add('Selected')
+    }
   }
 
   return (
@@ -28,7 +32,7 @@ const Navbar = ({ inMenu }) => {
       <a
         href="#about"
         className="Link"
-        onClick={(evt) => select(evt)}
+        onClick={(evt) => handleClick(evt)}
       >
         Sobre
       </a>
@@ -36,7 +40,7 @@ const Navbar = ({ inMenu }) => {
       <a
         href="#skills"
         className="Link"
-        onClick={(evt) => select(evt)}
+        onClick={(evt) => handleClick(evt)}
       >
         Habilidades
       </a>
@@ -44,7 +48,7 @@ const Navbar = ({ inMenu }) => {
       <a
         href="#services"
         className="Link"
-        onClick={(evt) => select(evt)}
+        onClick={(evt) => handleClick(evt)}
       >
         Serviços
       </a>
@@ -52,7 +56,7 @@ const Navbar = ({ inMenu }) => {
       <a
         href="#portfolio"
         className="Link"
-        onClick={(evt) => select(evt)}
+        onClick={(evt) => handleClick(evt)}
       >
         Projetos
       </a>

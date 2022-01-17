@@ -35,7 +35,7 @@ const Header = () => {
       </button>
 
       {
-        showMenu && <Menu />
+        showMenu && <Menu toggleMenu={toggleMenu} />
       }
     </header>
   )

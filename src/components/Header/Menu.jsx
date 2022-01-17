@@ -4,10 +4,10 @@ import React from 'react'
 /*-===================== Children =====================-*/
 import Navbar from './Navbar'
 
-const Menu = () => {
+const Menu = ({ toggleMenu }) => {
   return (
     <div className="Menu">
-      <Navbar inMenu />
+      <Navbar inMenu toggleMenu={toggleMenu} />
     </div>
   )
 }
