@@ -16,6 +16,8 @@
 
 @media only screen and (max-width: 600px) {
   .Header {
+    padding: $mobile-hr-padding !important;
+
     .Navbar {
       .Link {
         font: $x-small-font !important;
@@ -37,7 +39,7 @@
     box-shadow: 0 4px 2px -2px t($shadow);
     display: flex;
     height: $header-height;
-    max-width: 100vw;
+    padding: $header-padding;
     position: fixed;
     user-select: none;
     width: $default-width;
@@ -50,7 +52,6 @@
       color: t($text);
       cursor: pointer;
       font: $small-title-font;
-      margin: $title-margin;
 
       &:hover {
         transform: translateY(-5%);
@@ -147,7 +148,7 @@
 
   .MenuBtn {
     display: none;
-    margin: 0 2.375rem 0 auto;
+    margin-left: auto;
   }
 
   .Menu {

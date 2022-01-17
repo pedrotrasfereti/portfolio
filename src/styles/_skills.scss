@@ -22,16 +22,42 @@
       font: $x-small-heading-font !important;
     }
 
-    .DdHeader {
-      height: $small-skill-height !important;
-      width: $small-skill-width !important;
+    .Dropdown--Container {
+      padding: $mobile-hr-padding !important;
 
-      .Title {
-        font: $bold-small-font !important;
-      }
+      .Dropdown {
+        align-items: center !important;
 
-      .Button {
-        font-size: $xx-small-icon !important;
+        .DdHeader {
+          height: $small-skill-height !important;
+          width: $small-skill-width !important;
+  
+          .Icon {
+            font-size: $small-icon !important;
+            margin: 0 1rem !important;
+          }
+    
+          .Title {
+            font: $bold-small-font !important;
+          }
+  
+          .Link {
+            font: $xx-small-font !important;
+          }
+    
+          .Button {
+            font-size: $xx-small-icon !important;
+            margin: 0 1rem 0 auto !important;
+          }
+        }
+  
+        .DropdownList {
+          width: $small-skill-list-width !important;
+  
+          .Skill .Container {
+            font: $x-small-font !important;
+          }
+        }
       }
     }
   }

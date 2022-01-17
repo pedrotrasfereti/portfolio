@@ -2,6 +2,8 @@
 
 @media only screen and (max-width: 1000px) {
   .Footer {
+    padding: $mobile-hr-padding !important;
+
     .Title {
       font: $small-title-font !important;
     }
@@ -24,6 +26,14 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .Footer {
+    .Subtitle {
+      width: 10rem !important;
+    }
+  }
+}
+
 .Footer {
   @include themify() {
     @include smooth();
@@ -32,7 +42,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     min-height: $footer-height;
-    padding: 2.75em;
+    padding: 2.75rem;
     width: $default-width;
   }
 

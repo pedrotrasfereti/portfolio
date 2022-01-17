@@ -2,8 +2,10 @@
 
 @media only screen and (max-width: 1000px) {
   .Contact {
+    padding: 0 0 10rem !important;
+
     .Heading {
-      font: $small-heading-font !important;
+      font: $x-small-heading-font !important;
     }
 
     .Info--Container {

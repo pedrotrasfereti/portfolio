@@ -40,8 +40,10 @@
       font: $x-small-heading-font !important;
     }
 
-    .Button .Icon {
-      font-size: $big-icon !important;
+    .Slide {
+      .Button .Icon {
+        font-size: $big-icon !important;
+      }
     }
   }
 }
@@ -51,7 +53,6 @@
     @include smooth();
     background-color: t($body);
     min-height: $section-height;
-    padding: 2.6rem;
     width: $default-width;
   }
 

@@ -34,21 +34,37 @@
 
     .Description {
       font: $small-font !important;
-      max-width: 29em !important;
+      max-width: 29rem !important;
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .Hero {
-    .Heading {
-      font: $big-heading-font !important;
-      width: 20rem;
+  .Home {
+    padding: $mobile-hr-padding !important;
+
+    .Content--Container {
+      .Social {
+        margin: 0 0 1rem .15rem !important;
+      }
+
+      .Link {
+        display: flex !important;
+        bottom: 3.5rem !important;
+        left: 25vw !important;
+      }
     }
 
-    .Description {
-      font: $x-small-font !important;
-      max-width: 20rem !important;
+    .Hero {
+      .Heading {
+        font: $big-heading-font !important;
+        width: 21rem !important;
+      }
+
+      .Description {
+        font: $small-font !important;
+        width: 19rem !important;
+      }
     }
   }
 }

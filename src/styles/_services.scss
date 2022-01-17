@@ -23,6 +23,8 @@
 
 @media only screen and (max-width: 600) {
   .Services {
+    padding: $mobile-hr-padding !important;
+
     .Heading {
       font: $x-small-heading-font !important;
     }

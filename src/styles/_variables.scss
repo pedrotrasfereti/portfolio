@@ -49,7 +49,7 @@ $xx-small-heading-font: 500 1.45em Poppins, sans-serif;
 $x-small-heading-font: 500 2em Poppins, sans-serif;
 $small-heading-font: 500 2.25em Poppins, sans-serif;
 $medium-heading-font: 500 2.5em Poppins, sans-serif;
-$big-heading-font: 500 3em Poppins, sans-serif;
+$big-heading-font: 500 3.25em Poppins, sans-serif;
 $x-large-heading-font: 500 3.5em Poppins, sans-serif;
 $xx-large-heading-font: 500 4em Poppins, sans-serif;
 
@@ -65,9 +65,10 @@ $default-width: 100%;
 
 // Dropdowns
 $small-skill-height: 4.5rem;
-$small-skill-width: 23.25rem;
+$small-skill-width: 21.25rem;
 $skill-height: 4.75rem;
 $skill-width: 26.25rem;
+$small-skill-list-width: 20rem; 
 
 // Cards
 $small-card-height: 20.9rem;
@@ -84,14 +85,17 @@ $textarea-height: 9rem;
 
 /*-================== SPACINGS ===================-*/
 // Header
-$title-margin: 0 0 0 2.375em;
-$link-gap: 0 1.25em;
-$theme-gap: 0 1.125em 0 2em;
+$header-padding: 0 2.375rem;
+$link-gap: 0 1.25rem;
+$theme-gap: 0 1.125rem 0 2rem;
 
 // Home
-$home-padding: 1em 3.5em;
+$home-padding: 1rem 3.5rem;
 
 // Button
 $btn-padding: .5rem 1.2rem;
 $btn-radius: .4rem;
 $btn-outline: .12rem;
+
+// Mobile
+$mobile-hr-padding: 2.125rem;
