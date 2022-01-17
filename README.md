@@ -23,3 +23,4 @@ Tecnologias e serviços usados na criação desse website:
 
 1. Instalar as dependências: ``yarn add``
 2. Iniciar: ``yarn dev``
+3. Ir para ``http://localhost:3000/``
