@@ -18,3 +18,8 @@ Tecnologias e serviços usados na criação desse website:
 - [**EmailJs**](https://www.emailjs.com/) : Serviço para enviar e-mail com JavaScript
 
 > P.S.: Todos os componentes presentes na página foram desenvolvidos por mim
+
+## Rodando localmente
+
+1. Instalar as dependências: ``yarn add``
+2. Iniciar: ``yarn dev``
