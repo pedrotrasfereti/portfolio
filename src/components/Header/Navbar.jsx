@@ -18,7 +18,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
   }
 
   function handleClick({ target }) {
-    if (inMenu) {
+    if (inMenu || target.classList.contains('Button')) {
       toggleMenu()
     } else {
       const links = Array.from(document.getElementsByClassName('Link'))
@@ -76,6 +76,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
       <a
         href="#contact"
         className={inMenu ? 'Link' : 'Button'}
+        onClick={(evt) => handleClick(evt)}
       >
         Contato
       </a>
