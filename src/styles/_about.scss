@@ -5,7 +5,7 @@
     .Image {
       height: 12rem !important;
       width: 12rem !important;
-      margin-right: 0 !important;
+      margin: $section-padding 0 0 !important;
     }
 
     .Heading {
@@ -47,8 +47,8 @@
     flex-flow: row wrap;
     justify-content: center;
     min-height: $section-height;
+    padding: $section-padding;
     width: $default-width;
-    padding: 3.5rem;
   }
 
   .Image {

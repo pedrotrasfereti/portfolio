@@ -68,6 +68,7 @@
     @include smooth();
     background-color: t($body);
     min-height: calc($section-height + .75rem);
+    padding: $section-padding;
     width: $default-width;
   }
 
@@ -75,7 +76,7 @@
     @include themify() {
       color: t($text);
       font: $medium-heading-font;
-      padding: 5.15rem 0 2.6rem;
+      padding: $section-padding;
       text-align: center;
     }
   }

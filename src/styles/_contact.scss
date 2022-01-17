@@ -2,8 +2,6 @@
 
 @media only screen and (max-width: 1000px) {
   .Contact {
-    padding: 0 0 10rem !important;
-
     .Heading {
       font: $x-small-heading-font !important;
     }
@@ -48,7 +46,7 @@
     @include smooth();
     background-color: t($body);
     min-height: $section-height;
-    padding: 2.6rem 2.6rem 10rem 2.6rem;
+    padding: $contact-padding;
     width: $default-width;
   }
 
@@ -56,7 +54,7 @@
     @include themify() {
       color: t($text);
       font: $medium-heading-font;
-      padding: 2.6rem 0;
+      padding: $section-padding;
       text-align: center;
     }
   }

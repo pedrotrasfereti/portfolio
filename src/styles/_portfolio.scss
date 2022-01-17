@@ -53,6 +53,7 @@
     @include smooth();
     background-color: t($body);
     min-height: $section-height;
+    padding: 2.6rem 0;
     width: $default-width;
   }
 

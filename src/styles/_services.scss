@@ -36,7 +36,7 @@
     @include smooth();
     background-color: t($body);
     min-height: $section-height;
-    padding: 2.6rem;
+    padding: $section-padding;
     width: $default-width;
   }
 
@@ -44,7 +44,7 @@
     @include themify() {
       color: t($text);
       font: $medium-heading-font;
-      padding: 2.6rem 0;
+      padding: $section-padding;
       text-align: center;
     }
   }
