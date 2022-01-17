@@ -14,7 +14,7 @@ Tecnologias e serviços usados na criação desse website:
 - [**React Icons**](https://react-icons.github.io/react-icons/) : Biblioteca de ícones para React.js
 - [**Sass**](https://sass-lang.com/) : Linguagem de estilo
 - [**Axios**](https://axios-http.com/) : Cliente HTTP para o navegador
-- [**GitHub API**](https://docs.github.com/en/rest) : API para buscar repositórios no GitHub
+- [**GitHub API**](https://docs.github.com/en/rest) : APIs do GitHub
 - [**EmailJs**](https://www.emailjs.com/) : Serviço para enviar e-mail com JavaScript
 
 > P.S.: Todos os componentes presentes na página foram desenvolvidos por mim
