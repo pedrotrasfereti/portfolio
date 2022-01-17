@@ -2,6 +2,8 @@
 
 Meu portifólio profissional!
 
+<br />
+
 ---
 
 ## Tecnologias usadas
@@ -20,6 +22,8 @@ Tecnologias e serviços usados na criação desse website:
 - [**EmailJs**](https://www.emailjs.com/) : Serviço para enviar e-mail com JavaScript
 
 > P.S.: Todos os componentes presentes na página foram desenvolvidos por mim
+
+<br />
 
 ---
 
