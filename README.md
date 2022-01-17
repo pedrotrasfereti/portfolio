@@ -17,4 +17,4 @@ Tecnologias e serviços usados na criação desse website:
 - [**GitHub API**](https://docs.github.com/en/rest) : API para buscar repositórios no GitHub
 - [**EmailJs**](https://www.emailjs.com/) : Serviço para enviar e-mail com JavaScript
 
-> Todos os componentes presentes na página foram desenvolvidos por mim
+> P.S.: Todos os componentes presentes na página foram desenvolvidos por mim
