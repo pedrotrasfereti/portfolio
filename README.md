@@ -1,6 +1,6 @@
 # Portifólio
 
-Meu portifólio profissional!
+Meu portfólio profissional!
 
 <br />
 
