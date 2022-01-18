@@ -83,6 +83,19 @@
         line-height: $line-height !important;
         max-width: 40rem;
       }
+
+      .Link {
+        @include themify() {
+          color: t($primary);
+          cursor: pointer;
+          font-weight: 500;
+          text-decoration: none;
+
+          &:hover {
+            color: t($secondary);
+          }
+        }
+      }
     }
   }
 }

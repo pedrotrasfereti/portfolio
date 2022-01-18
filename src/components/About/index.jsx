@@ -19,12 +19,21 @@ const About = () => {
       <div className="Content">
         <h1 className="Heading">Sobre mim</h1>
         <p className="Paragraph">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Numquam in iure minus labore harum perspiciatis id vel tempore
-          fugiat accusamus delectus aliquam voluptate, magni placeat,
-          quisquam nobis, qui sequi eum officia necessitatibus.
-          Numquam mollitia voluptatem debitis repellendus reprehenderit
-          sint consequatur?
+          Minha jornada como programador se iniciou em 2020, quando tive a ideia
+          de criar um website pessoal. Durante esse processo,
+          me apaixonei pela liberdade dada pela tecnologia para resolver um problema,
+          independente do seu tamanho. Desde então, continuei aprendendo mais sobre
+          programação, em especial, o desenvolvimento web. Em 2021, ingressei no
+          curso profissionalizante da&nbsp;
+          <a
+            alt="Site oficial da Trybe"
+            href="https://www.betrybe.com"
+            target="_blank"
+            className="Link"
+          >
+            Trybe
+          </a>,
+          onde estou atualmente me qualificando para ser um desenvolvedor Full-Stack.
         </p>
       </div>
     </section>
