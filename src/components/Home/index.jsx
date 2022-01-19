@@ -28,7 +28,7 @@ const Home = () => {
           </p>
 
           <a href="#portfolio" className="Button">
-            Ver portifólio
+            Ver portfólio
           </a>
         </div>
 
