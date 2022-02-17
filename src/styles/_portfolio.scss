@@ -77,6 +77,7 @@
 
       .Card {
         @include themify() {
+          @include smooth();
           background: t($bodyAlt);
           box-shadow: 0 0 6px -2px t($shadow);
         }
