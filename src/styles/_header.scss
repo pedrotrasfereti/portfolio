@@ -153,6 +153,7 @@
 
   .Menu {
     @include themify() {
+      @include smooth();
       animation: .7s slideDown forwards;
       background: t($header);
       border: 0;
