@@ -54,9 +54,7 @@ const defaultValue = [
     name: '',
     language: '',
     description: '',
-    topics: [
-      '',
-    ],
+    topics: [''],
     html_url: '',
   },
 ]

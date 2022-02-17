@@ -33,10 +33,10 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         <li className="Skill">
           <div className="Container">
             <span>SQL</span>
-            <span>70%</span>
+            <span>80%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(70)} />
+            <div className="Ability" style={setWidth(80)} />
           </span>
         </li>
         <li className="Skill">
@@ -51,19 +51,46 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         <li className="Skill">
           <div className="Container">
             <span>Node.js</span>
-            <span>50%</span>
+            <span>80%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(50)} />
+            <div className="Ability" style={setWidth(80)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Express.js</span>
-            <span>60%</span>
+            <span>90%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(60)} />
+            <div className="Ability" style={setWidth(90)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Sequelize.js</span>
+            <span>90%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(90)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Heroku</span>
+            <span>80%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(80)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Docker</span>
+            <span>70%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(70)} />
           </span>
         </li>
         <li className="Skill">
