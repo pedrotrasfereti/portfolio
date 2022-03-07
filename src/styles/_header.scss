@@ -143,6 +143,10 @@
 
     .ThemeBtn {
       margin: $theme-gap;
+
+      &:focus-visible {
+        outline: none;
+      }
     }
   }
 
