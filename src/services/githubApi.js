@@ -1,5 +1,12 @@
 import axios from 'axios'
 
+// List of repos that will not show in the slide
+const excludeList = [
+  'pedrotrasfereti',
+  'portfolio',
+  'javascript-game',
+];
+
 const formatName = (nameStr) => {
   const removeCustom =
     nameStr.replace('trybe', '')
@@ -26,7 +33,7 @@ const getRepos = async () => {
   const reposData =
     data
       .filter((({ name, fork }) => (
-        !['pedrotrasfereti', 'portfolio'].includes(name) && !fork
+        !excludeList.includes(name) && !fork
       )))
       .map(((
         {
