@@ -14,7 +14,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Professional Portifolio Using React.js and Sass
 
-Welcome to the _GitHub repository_ of my **professional portfolio**! Here you can find information about the project's development, such as which technologies were used, how to install and run the project, usage and more. If you're confused about where you are, try [this link](https://portfolio-orcin-six.vercel.app/) to the deployed project instead 😄.
+Welcome to the _GitHub repository_ of my **professional portfolio**! Here you can find information about the project's development, such as which technologies were used, how to install and run the project, usage and more. If you're confused about where you are, try [**this link**][deploy-url] to the deployed project instead 😄.
 
 <div align="center">
 
@@ -22,7 +22,7 @@ Welcome to the _GitHub repository_ of my **professional portfolio**! Here you ca
 
 </div>
 
-This portfolio was developed as a side project during my time at [Trybe](https://www.betrybe.com/) to showcase some of my skills, projects and serve as an extension of my LinkedIn. It contains a header, hero and footer and is divided into five main sections: About, Skills, Services, Portfolio and Contact. It responds well to different display sizes and allows you to switch between a light and dark theme. For a tutorial on how to create themes using Sass, visit my [other repo](https://github.com/pedrotrasfereti/theming-sass).
+This portfolio was developed as a side project during my time at [Trybe][trybe-url] to showcase some of my skills, projects and serve as an extension of my LinkedIn. It contains a header, hero and footer and is divided into five main sections: About, Skills, Services, Portfolio and Contact. It responds well to different display sizes and allows you to switch between a light and dark theme. For a tutorial on how to create themes using Sass, visit my [other repo][theming-sass-url].
 
 <br />
 
@@ -126,3 +126,7 @@ List of resources I find helpful and would like to give credit to:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pedro-trasfereti/
 [product-screenshot]: public/portfolio.gif
+[trybe-url]: https://www.betrybe.com/
+[deploy-url]: https://pedrotrasfereti.vercel.app/
+[theming-sass-url]: https://github.com/pedrotrasfereti/theming-sass
+
