@@ -126,7 +126,7 @@
           color: t($text);
         }
 
-        font: $x-large-title-font;
+        font: $big-title-font;
       }
 
       .RepoDescription::-webkit-scrollbar-thumb {
@@ -151,7 +151,7 @@
         }
 
         font: $small-font;
-        margin-top: 1.25rem;
+        margin: .5rem 0 1rem;
         max-height: 4.75rem;
         overflow-y: auto;
       }
@@ -160,7 +160,7 @@
         display: flex;
         flex-flow: row wrap;
         gap: .5em;
-        margin-top: 1rem;
+        margin: .5rem 0;
 
         .Topic {
           @include themify() {
@@ -171,7 +171,7 @@
           }
   
           display: inline-block;
-          padding: .2rem 1rem;
+          padding: .2rem .9rem;
           border: 0;
           border-radius: 1em;
           font: $x-small-font;
