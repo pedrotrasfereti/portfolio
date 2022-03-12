@@ -104,6 +104,15 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         </li>
         <li className="Skill">
           <div className="Container">
+            <span>Prisma</span>
+            <span>70%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(70)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
             <span>Socket.io</span>
             <span>1%</span>
           </div>
