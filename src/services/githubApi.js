@@ -7,12 +7,8 @@ const excludeList = [
   'javascript-game',
 ];
 
-const formatName = (nameStr) => {
-  const removeCustom =
-    nameStr.replace('trybe', '')
-      .replace('rocketseat', '')
-
-  const removeHyphen = removeCustom.replace(/-/g, ' ')
+const prettify = (nameStr) => {
+  const removeHyphen = nameStr.replace(/-/g, ' ')
   const wordsArr = removeHyphen.split(' ')
 
   // Capitalize each word in array
@@ -45,7 +41,7 @@ const getRepos = async () => {
         }
       ) => (
         {
-          name: formatName(name),
+          name: prettify(name),
           language,
           description,
           topics,
