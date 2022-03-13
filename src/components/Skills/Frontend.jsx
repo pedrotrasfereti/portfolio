@@ -68,7 +68,7 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
         </li>
         <li className="Skill">
           <div className="Container">
-            <span>React</span>
+            <span>React.js</span>
             <span>80%</span>
           </div>
           <span className="ProgressBar">
