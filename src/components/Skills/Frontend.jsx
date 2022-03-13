@@ -75,6 +75,24 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
             <div className="Ability" style={setWidth(80)} />
           </span>
         </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Redux</span>
+            <span>75%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(75)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Context API</span>
+            <span>60%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(60)} />
+          </span>
+        </li>
       </ul>
     </div>
   )
