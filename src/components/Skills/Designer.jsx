@@ -33,19 +33,19 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
         <li className="Skill">
           <div className="Container">
             <span>UI Design para Iniciantes</span>
-            <span>20%</span>
+            <span>30%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(20)} />
+            <div className="Ability" style={setWidth(30)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
             <span>Figma</span>
-            <span>20%</span>
+            <span>40%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(20)} />
+            <div className="Ability" style={setWidth(40)} />
           </span>
         </li>
       </ul>
