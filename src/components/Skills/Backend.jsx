@@ -32,7 +32,7 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
       <ul id="be-list" className="DropdownList Hidden">
         <li className="Skill">
           <div className="Container">
-            <span>SQL</span>
+            <span>MySQL</span>
             <span>80%</span>
           </div>
           <span className="ProgressBar">
@@ -68,20 +68,47 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         </li>
         <li className="Skill">
           <div className="Container">
-            <span>Sequelize.js</span>
-            <span>90%</span>
+            <span>Prisma</span>
+            <span>70%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(90)} />
+            <div className="Ability" style={setWidth(70)} />
           </span>
         </li>
         <li className="Skill">
           <div className="Container">
-            <span>Heroku</span>
+            <span>Sequelize.js</span>
+            <span>60%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(60)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>TypeScript</span>
             <span>80%</span>
           </div>
           <span className="ProgressBar">
             <div className="Ability" style={setWidth(80)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Arquitetura ORM/SOLID</span>
+            <span>40%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(25)} />
+          </span>
+        </li>
+        <li className="Skill">
+          <div className="Container">
+            <span>Socket.io</span>
+            <span>1%</span>
+          </div>
+          <span className="ProgressBar">
+            <div className="Ability" style={setWidth(1)} />
           </span>
         </li>
         <li className="Skill">
@@ -95,29 +122,11 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         </li>
         <li className="Skill">
           <div className="Container">
-            <span>Arquitetura ORM/SOLID</span>
-            <span>25%</span>
+            <span>Heroku</span>
+            <span>80%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(25)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Prisma</span>
-            <span>70%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(70)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Socket.io</span>
-            <span>1%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(1)} />
+            <div className="Ability" style={setWidth(80)} />
           </span>
         </li>
       </ul>
