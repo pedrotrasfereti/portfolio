@@ -22,7 +22,7 @@ Welcome to the _GitHub repository_ of my **professional portfolio**! Here you ca
 
 </div>
 
-This portfolio was developed as a side project during my time at [Trybe][trybe-url] to showcase some of my skills, projects and serve as an extension of my LinkedIn. It contains a header, hero and footer and is divided into five main sections: About, Skills, Services, Portfolio and Contact. It responds well to different display sizes and allows you to switch between a light and dark theme. For a tutorial on how to create themes using Sass, visit my [other repo][theming-sass-url].
+This portfolio was developed as a side project during my time at [Trybe][trybe-url] to showcase some of my skills, projects and serve as an extension of my LinkedIn. It contains a header, hero and footer and is divided into five main sections: About, Skills, Services, Portfolio and Contact. It responds well to different display sizes and allows you to switch between a light and dark theme. For a tutorial on how to create themes using Sass, visit my [other project][theming-sass-url].
 
 <br />
 
