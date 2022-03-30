@@ -105,10 +105,10 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         <li className="Skill">
           <div className="Container">
             <span>Socket.io</span>
-            <span>20%</span>
+            <span>40%</span>
           </div>
           <span className="ProgressBar">
-            <div className="Ability" style={setWidth(20)} />
+            <div className="Ability" style={setWidth(40)} />
           </span>
         </li>
         <li className="Skill">
