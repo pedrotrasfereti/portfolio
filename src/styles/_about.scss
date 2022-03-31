@@ -97,5 +97,27 @@
         }
       }
     }
+
+    .Button {
+      @include themify() {
+        @include smooth();
+        align-self: flex-start;
+        background: t($primary);
+        border: t($primary);
+        border-radius: $btn-radius;
+        color: t($btnText);
+        cursor: pointer;
+        display: inline-block;
+        font: $bold-small-font;
+        outline: $btn-outline solid t($primary);
+        padding: $btn-padding;
+        text-decoration: none;
+
+        &:hover {
+          background: transparent;
+          color: t($primary);
+        }
+      }
+    }
   }
 }
