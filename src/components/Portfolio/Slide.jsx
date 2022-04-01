@@ -5,8 +5,10 @@ import React, { useState, useEffect } from 'react'
 import Card from './Card'
 
 /*-===================== Icons =====================-*/
-import { RiArrowLeftSLine as ArrowLeft } from 'react-icons/ri'
-import { RiArrowRightSLine as ArrowRight } from 'react-icons/ri'
+import {
+  RiArrowLeftSLine as ArrowLeft,
+  RiArrowRightSLine as ArrowRight,
+} from 'react-icons/ri'
 
 /*-===================== Services =====================-*/
 import {

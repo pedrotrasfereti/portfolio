@@ -3,8 +3,12 @@ import React from 'react'
 
 /*-===================== Icons =====================-*/
 import { BiPen as DesignerIcon } from 'react-icons/bi'
-import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
-import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
+
+import {
+  RiArrowUpSLine as ArrowUp,
+  RiArrowDownSLine as ArrowDown,
+  RiArrowDownSLine as ArrowDown,
+} from 'react-icons/ri'
 
 /*-===================== Children ==================-*/
 import Skill from './Skill'

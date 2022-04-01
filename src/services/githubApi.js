@@ -26,8 +26,7 @@ const getRepos = async () => {
   const response = await axios.get(url)
   const data = response.data
 
-  const reposData =
-    data
+  return data
       .filter((({ name, fork }) => (
         !excludeList.includes(name) && !fork
       )))
@@ -48,8 +47,6 @@ const getRepos = async () => {
           html_url,
         }
       )))
-
-  return reposData
 }
 
 const defaultValue = [

@@ -9,8 +9,10 @@ import Navbar from './Navbar'
 import Menu from './Menu'
 
 /*-===================== Icons =====================-*/
-import { FiMenu as MenuIcon } from 'react-icons/fi'
-import { FiX as XIcon } from 'react-icons/fi'
+import {
+  FiMenu as MenuIcon,
+  FiX as XIcon,
+} from 'react-icons/fi'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)

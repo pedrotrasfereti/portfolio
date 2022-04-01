@@ -8,9 +8,11 @@ import '../../styles/_contact.scss'
 import Form from './Form'
 
 /*-===================== Icons =====================-*/
-import { FiPhone as Phone } from 'react-icons/fi'
-import { FiMail as Email } from 'react-icons/fi'
-import { FiMapPin as MapPin } from 'react-icons/fi'
+import {
+  FiPhone as Phone,
+  FiMail as Email,
+  FiMapPin as MapPin,
+} from 'react-icons/fi'
 
 const Contact = () => {
   return (

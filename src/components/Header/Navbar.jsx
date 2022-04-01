@@ -2,8 +2,10 @@
 import React, { useState } from 'react'
 
 /*-===================== Icons =====================-*/
-import { FiMoon as Moon } from 'react-icons/fi'
-import { FiSun as Sun } from 'react-icons/fi'
+import {
+  FiMoon as Moon,
+  FiSun as Sun,
+} from 'react-icons/fi'
 
 const Navbar = ({ inMenu, toggleMenu }) => {
   const [theme, setTheme] = useState('light')

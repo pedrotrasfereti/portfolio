@@ -5,9 +5,11 @@ import React from 'react'
 import '../../styles/_footer.scss'
 
 /*-===================== Icons =====================-*/
-import { FiGithub as Github } from 'react-icons/fi'
-import { FiLinkedin as LinkedIn } from 'react-icons/fi'
-import { FiDribbble as Dribbble } from 'react-icons/fi'
+import {
+  FiGithub as Github,
+  FiLinkedin as LinkedIn,
+  FiDribbble as Dribbble,
+} from 'react-icons/fi'
 
 const Footer = () => {
   return (

@@ -5,10 +5,13 @@ import React from 'react'
 import '../../styles/_services.scss'
 
 /*-===================== Icons =====================-*/
-import { BiCodeCurly as FrontIcon } from 'react-icons/bi'
-import { BiServer as BackIcon } from 'react-icons/bi'
-import { BiCodeAlt as FullIcon } from 'react-icons/bi'
 import { FiArrowDown as ArrowDown } from 'react-icons/fi'
+
+import {
+  BiCodeCurly as FrontIcon,
+  BiServer as BackIcon,
+  BiCodeAlt as FullIcon,
+} from 'react-icons/bi'
 
 const Services = () => {
   return (
