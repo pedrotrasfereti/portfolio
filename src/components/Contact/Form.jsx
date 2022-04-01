@@ -37,7 +37,7 @@ const Form = () => {
 
     const regex = {
       name: /([A-Za-z]){3,}/g,
-      address: /^[^\s@]+@[^\s@]+\.[^\s@]+$/g,
+      address: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
       message: /([A-Za-z0-9])/g,
     }
 
@@ -111,7 +111,7 @@ const Form = () => {
       <div className="Input--Container">
         <input
           name="address"
-          type="text"
+          type="email"
           className="Input"
           placeholder="E-Mail"
           value={values.address}
