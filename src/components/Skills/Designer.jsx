@@ -32,8 +32,8 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
       <ul id="de-list" className="DropdownList Hidden">
         <li className="Skill">
           <div className="Container">
-            <span>UI Design para Iniciantes</span>
-            <span>30%</span>
+            <span>UI Design</span>
+            <span>40%</span>
           </div>
           <span className="ProgressBar">
             <div className="Ability" style={setWidth(30)} />
@@ -42,7 +42,7 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
         <li className="Skill">
           <div className="Container">
             <span>Figma</span>
-            <span>40%</span>
+            <span>60%</span>
           </div>
           <span className="ProgressBar">
             <div className="Ability" style={setWidth(40)} />
