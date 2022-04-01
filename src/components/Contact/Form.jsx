@@ -37,7 +37,7 @@ const Form = () => {
 
     const regex = {
       name: /([A-Za-z]){3,}/g,
-      address: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+      address: /^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
       message: /([A-Za-z0-9])/g,
     }
 
