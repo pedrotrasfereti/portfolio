@@ -7,7 +7,6 @@ import { BiPen as DesignerIcon } from 'react-icons/bi'
 import {
   RiArrowUpSLine as ArrowUp,
   RiArrowDownSLine as ArrowDown,
-  RiArrowDownSLine as ArrowDown,
 } from 'react-icons/ri'
 
 /*-===================== Children ==================-*/
