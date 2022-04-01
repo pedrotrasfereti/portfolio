@@ -6,7 +6,42 @@ import { BiCodeCurly as FrontIcon } from 'react-icons/bi'
 import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
 import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
 
+/*-===================== Children ==================-*/
+import Skill from './Skill'
+import { v4 as uuid } from 'uuid'
+
 const Frontend = ({ handleDropdown, arrow, setWidth }) => {
+  const skills = [
+    {
+      skillName: 'HTML',
+      ability: '85',
+    },
+    {
+      skillName: 'CSS',
+      ability: '70',
+    },
+    {
+      skillName: 'Sass',
+      ability: '75',
+    },
+    {
+      skillName: 'Styled Components',
+      ability: '75',
+    },
+    {
+      skillName: 'React',
+      ability: '80',
+    },
+    {
+      skillName: 'Redux',
+      ability: '80',
+    },
+    {
+      skillName: 'Context API',
+      ability: '70',
+    },
+  ];
+
   return (
     <div className="Dropdown">
       <div className="DdHeader">
@@ -30,69 +65,16 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
       </div>
 
       <ul id="fe-list" className="DropdownList Hidden">
-        <li className="Skill">
-          <div className="Container">
-            <span>HTML</span>
-            <span>85%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(85)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>CSS</span>
-            <span>65%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(65)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Sass</span>
-            <span>70%</span>
-          </div>
-          <div className="ProgressBar">
-            <div className="Ability" style={setWidth(70)} />
-          </div>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Styled Components</span>
-            <span>90%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(90)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>React.js</span>
-            <span>80%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(80)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Redux</span>
-            <span>75%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(75)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Context API</span>
-            <span>60%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(60)} />
-          </span>
-        </li>
+        {
+          skills.map(({ skillName, ability }) => (
+            <Skill
+              key={ uuid() }
+              name={ skillName }
+              ability={ ability }
+              setWidth={ setWidth }
+            />
+          ))
+        }
       </ul>
     </div>
   )

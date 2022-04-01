@@ -6,7 +6,58 @@ import { BiServer as BackIcon } from 'react-icons/bi'
 import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
 import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
 
+/*-===================== Children ==================-*/
+import Skill from './Skill'
+import { v4 as uuid } from 'uuid'
+
 const Backend = ({ handleDropdown, arrow, setWidth }) => {
+  const skills = [
+    {
+      skillName: 'Node.js',
+      ability: '75',
+    },
+    {
+      skillName: 'Express',
+      ability: '85',
+    },
+    {
+      skillName: 'MySQL',
+      ability: '70',
+    },
+    {
+      skillName: 'MongoDB',
+      ability: '50',
+    },
+    {
+      skillName: 'Prisma',
+      ability: '60',
+    },
+    {
+      skillName: 'Sequelize',
+      ability: '70',
+    },
+    {
+      skillName: 'TypeScript',
+      ability: '80',
+    },
+    {
+      skillName: 'Object-Oriented Programming',
+      ability: '60',
+    },
+    {
+      skillName: 'Socket.io',
+      ability: '40',
+    },
+    {
+      skillName: 'Docker',
+      ability: '70',
+    },
+    {
+      skillName: 'Heroku',
+      ability: '70',
+    },
+  ];
+
   return (
     <div className="Dropdown">
       <div className="DdHeader">
@@ -30,105 +81,16 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
       </div>
 
       <ul id="be-list" className="DropdownList Hidden">
-        <li className="Skill">
-          <div className="Container">
-            <span>MySQL</span>
-            <span>80%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(80)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>MongoDB</span>
-            <span>30%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(30)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Node.js</span>
-            <span>80%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(80)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Express.js</span>
-            <span>90%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(90)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Prisma</span>
-            <span>70%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(70)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Sequelize.js</span>
-            <span>60%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(60)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>TypeScript</span>
-            <span>80%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(80)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Arquitetura ORM/SOLID</span>
-            <span>40%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(25)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Socket.io</span>
-            <span>40%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(40)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Docker</span>
-            <span>70%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(70)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Heroku</span>
-            <span>80%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(80)} />
-          </span>
-        </li>
+        {
+          skills.map(({ skillName, ability }) => (
+            <Skill
+              key={ uuid() }
+              name={ skillName }
+              ability={ ability }
+              setWidth={ setWidth }
+            />
+          ))
+        }
       </ul>
     </div>
   )

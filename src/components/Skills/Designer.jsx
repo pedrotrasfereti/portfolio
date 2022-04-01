@@ -6,7 +6,22 @@ import { BiPen as DesignerIcon } from 'react-icons/bi'
 import { RiArrowUpSLine as ArrowUp } from 'react-icons/ri'
 import { RiArrowDownSLine as ArrowDown } from 'react-icons/ri'
 
+/*-===================== Children ==================-*/
+import Skill from './Skill'
+import { v4 as uuid } from 'uuid'
+
 const Designer = ({ handleDropdown, arrow, setWidth }) => {
+  const skills = [
+    {
+      skillName: 'UI Design',
+      ability: '40',
+    },
+    {
+      skillName: 'Figma',
+      ability: '60',
+    },
+  ];
+
   return (
     <div className="Dropdown">
       <div className="DdHeader">
@@ -30,24 +45,16 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
       </div>
 
       <ul id="de-list" className="DropdownList Hidden">
-        <li className="Skill">
-          <div className="Container">
-            <span>UI Design</span>
-            <span>40%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(30)} />
-          </span>
-        </li>
-        <li className="Skill">
-          <div className="Container">
-            <span>Figma</span>
-            <span>60%</span>
-          </div>
-          <span className="ProgressBar">
-            <div className="Ability" style={setWidth(40)} />
-          </span>
-        </li>
+        {
+          skills.map(({ skillName, ability }) => (
+            <Skill
+              key={ uuid() }
+              name={ skillName }
+              ability={ ability }
+              setWidth={ setWidth }
+            />
+          ))
+        }
       </ul>
     </div>
   )
