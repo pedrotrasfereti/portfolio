@@ -17,11 +17,11 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
   const skills = [
     {
       skillName: 'UI Design',
-      ability: '40',
+      ability: '55',
     },
     {
       skillName: 'Figma',
-      ability: '60',
+      ability: '70',
     },
   ];
 
