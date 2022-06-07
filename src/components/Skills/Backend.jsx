@@ -68,9 +68,9 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         <div className="Container">
           <h2 className="Title">Desenvolvimento Back-End</h2>
           <a
-            href=""
+            href="https://www.credential.net/9146c03f-77d6-4ab7-80ab-da2012a7bc4c"
             target="_blank"
-            className="Link Unavailable"
+            className="Link"
           >
             Ver Credencial
           </a>
