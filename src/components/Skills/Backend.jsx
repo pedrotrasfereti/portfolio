@@ -17,15 +17,15 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
   const skills = [
     {
       skillName: 'Node.js',
-      ability: '75',
+      ability: '90',
     },
     {
       skillName: 'Express',
-      ability: '85',
+      ability: '100',
     },
     {
       skillName: 'MySQL',
-      ability: '70',
+      ability: '85',
     },
     {
       skillName: 'MongoDB',
@@ -37,7 +37,7 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
     },
     {
       skillName: 'Sequelize',
-      ability: '70',
+      ability: '75',
     },
     {
       skillName: 'TypeScript',
@@ -57,7 +57,7 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
     },
     {
       skillName: 'Heroku',
-      ability: '70',
+      ability: '100',
     },
   ];
 
