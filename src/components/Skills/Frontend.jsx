@@ -21,23 +21,27 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
     },
     {
       skillName: 'CSS',
-      ability: '70',
+      ability: '80',
     },
     {
       skillName: 'Sass',
-      ability: '75',
+      ability: '80',
     },
     {
       skillName: 'Styled Components',
-      ability: '75',
+      ability: '90',
+    },
+    {
+      skillName: 'Stitches',
+      ability: '80',
     },
     {
       skillName: 'React',
-      ability: '80',
+      ability: '90',
     },
     {
       skillName: 'Redux',
-      ability: '80',
+      ability: '90',
     },
     {
       skillName: 'Context API',
