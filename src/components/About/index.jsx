@@ -7,9 +7,6 @@ import '../../styles/_about.scss'
 /*-===================== Images =====================-*/
 import Selfie from '../../images/Selfie.jpeg';
 
-/*-===================== Resources =====================-*/
-import CV from '../../../public/cv.pdf';
-
 const About = () => {
   return (
     <section id="about" className="About">
@@ -38,10 +35,6 @@ const About = () => {
           </a>,
           onde estou atualmente me qualificando para ser um desenvolvedor Full-Stack.
         </p>
-
-        <a href={ CV } className="Button" download>
-          Baixar CV
-        </a>
       </div>
     </section>
   )
