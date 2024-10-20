@@ -28,11 +28,11 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
     },
     {
       skillName: 'MySQL',
-      ability: '85',
+      ability: '80',
     },
     {
       skillName: 'MongoDB',
-      ability: '50',
+      ability: '90',
     },
     {
       skillName: 'Prisma',
@@ -40,28 +40,12 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
     },
     {
       skillName: 'Sequelize',
-      ability: '75',
-    },
-    {
-      skillName: 'TypeScript',
-      ability: '80',
+      ability: '60',
     },
     {
       skillName: 'Object-Oriented Programming',
       ability: '60',
-    },
-    {
-      skillName: 'Socket.io',
-      ability: '40',
-    },
-    {
-      skillName: 'Docker',
-      ability: '70',
-    },
-    {
-      skillName: 'Heroku',
-      ability: '100',
-    },
+    }
   ];
 
   return (

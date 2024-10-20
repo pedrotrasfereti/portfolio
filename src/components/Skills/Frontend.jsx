@@ -20,14 +20,14 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
   const skills = [
     {
       skillName: 'HTML',
-      ability: '85',
+      ability: '90',
     },
     {
       skillName: 'CSS',
-      ability: '80',
+      ability: '90',
     },
     {
-      skillName: 'Sass',
+      skillName: 'SCSS',
       ability: '80',
     },
     {
@@ -35,11 +35,7 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
       ability: '90',
     },
     {
-      skillName: 'Stitches',
-      ability: '80',
-    },
-    {
-      skillName: 'React',
+      skillName: 'React.js',
       ability: '90',
     },
     {
@@ -49,6 +45,14 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
     {
       skillName: 'Context API',
       ability: '70',
+    },
+    {
+      skillName: 'Vue.js',
+      ability: '100',
+    },
+    {
+      skillName: 'Nuxt.js',
+      ability: '80',
     },
   ];
 
