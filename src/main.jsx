@@ -8,6 +8,9 @@ import './styles/main.scss'
 /*-===================== App =====================-*/
 import App from './App.jsx'
 
+/*-===================== i18n =====================-*/
+import './i18n'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
