@@ -30,11 +30,18 @@
   "contact": {
     "title": "Contato",
     "phone": "Telefone",
-    "email": "E-mail",
+    "email": "E-Mail",
     "location": "Local",
     "country": "Brasil",
-    "message": "Mensagem",
-    "submit": "Enviar"
+    "form": {
+      "email": "E-Mail",
+      "name": "Nome",
+      "message": "Mensagem",
+      "invalidName": "O nome deve conter pelo menos 3 letras",
+      "invalidEmail": "Escreva um e-mail válido",
+      "invalidMessage": "A mensagem não pode ficar vazia",
+      "submit": "Enviar"
+    }
   },
   "footer": {
     "title": "Desenvolvedor Front-End"

@@ -33,8 +33,15 @@
     "email": "Email",
     "location": "Location",
     "country": "Brazil",
-    "message": "Message",
-    "submit": "Send"
+    "form": {
+      "email": "Email",
+      "name": "Name",
+      "message": "Message",
+      "invalidName": "Name must have at least 3 characters",
+      "invalidEmail": "Enter a valid email address",
+      "invalidMessage": "Message cannot be empty",
+      "submit": "Send"
+    }
   },
   "footer": {
     "title": "Front-End Developer"
