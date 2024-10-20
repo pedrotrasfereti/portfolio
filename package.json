@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
+    "i18next": "^23.16.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-i18next": "^15.0.3",
     "react-icons": "^4.3.1",
     "uuid": "^8.3.2"
   },
