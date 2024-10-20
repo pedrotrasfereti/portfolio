@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Icons =====================-*/
 import { BiCodeCurly as FrontIcon } from 'react-icons/bi'
@@ -14,6 +15,8 @@ import Skill from './Skill'
 import { v4 as uuid } from 'uuid'
 
 const Frontend = ({ handleDropdown, arrow, setWidth }) => {
+  const { t } = useTranslation()
+
   const skills = [
     {
       skillName: 'HTML',
@@ -54,13 +57,13 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
       <div className="DdHeader">
         <FrontIcon className="Icon" />
         <div className="Container">
-          <h2 className="Title">Desenvolvimento Front-End</h2>
+          <h2 className="Title">{t('skills.frontEnd')}</h2>
           <a
             href="https://www.credential.net/aa8a954f-741b-426b-beb1-98477ad6194b"
             target="_blank"
             className="Link"
           >
-            Ver Credencial
+            {t('skills.viewCertificate')}
           </a>
         </div>
         <button

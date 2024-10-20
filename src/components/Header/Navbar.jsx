@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Icons =====================-*/
 import {
@@ -8,6 +9,8 @@ import {
 } from 'react-icons/fi'
 
 const Navbar = ({ inMenu, toggleMenu }) => {
+  const { t } = useTranslation()
+
   const [theme, setTheme] = useState('light')
 
   function toggleDark(themeStr) {
@@ -36,7 +39,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
         className="Link"
         onClick={(evt) => handleClick(evt)}
       >
-        Sobre
+        {t('aboutMe.title')}
       </a>
 
       <a
@@ -44,7 +47,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
         className="Link"
         onClick={(evt) => handleClick(evt)}
       >
-        Habilidades
+        {t('skills.title')}
       </a>
 
       <a
@@ -52,7 +55,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
         className="Link"
         onClick={(evt) => handleClick(evt)}
       >
-        Serviços
+        {t('services.title')}
       </a>
 
       <a
@@ -60,7 +63,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
         className="Link"
         onClick={(evt) => handleClick(evt)}
       >
-        Projetos
+        {t('projects.title')}
       </a>
 
       {
@@ -80,7 +83,7 @@ const Navbar = ({ inMenu, toggleMenu }) => {
         className={inMenu ? 'Link' : 'Button'}
         onClick={(evt) => handleClick(evt)}
       >
-        Contato
+        {t('contact.title')}
       </a>
 
       {

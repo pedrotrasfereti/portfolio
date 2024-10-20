@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Styles =====================-*/
 import '../../styles/_about.scss'
@@ -8,32 +9,29 @@ import '../../styles/_about.scss'
 import Selfie from '../../images/Selfie.jpeg';
 
 const About = () => {
+  const { t } = useTranslation()
+
   return (
     <section id="about" className="About">
       <img
         src={Selfie}
-        alt="Uma selfie"
+        alt="Selfie"
         className="Image"
       />
 
       <div className="Content">
-        <h1 className="Heading">Sobre mim</h1>
+        <h1 className="Heading">{t('aboutMe.title')}</h1>
         <p className="Paragraph">
-          Minha jornada como programador se iniciou em 2020, quando tive a ideia
-          de criar um website pessoal. Durante esse processo,
-          me apaixonei pela liberdade dada pela tecnologia para resolver um problema,
-          independente do seu tamanho. Desde então, continuei aprendendo mais sobre
-          programação, em especial, o desenvolvimento web. Em 2021, ingressei no
-          curso profissionalizante da&nbsp;
+          {t('aboutMe.text').slice(0, t('aboutMe.text').indexOf('Trybe'))}
           <a
-            alt="Site oficial da Trybe"
+            alt="Trybe"
             href="https://www.betrybe.com"
             target="_blank"
             className="Link"
           >
             Trybe
-          </a>,
-          onde estou atualmente me qualificando para ser um desenvolvedor Full-Stack.
+          </a>
+          {t('aboutMe.text').slice(t('aboutMe.text').indexOf('Trybe') + 5)}
         </p>
       </div>
     </section>

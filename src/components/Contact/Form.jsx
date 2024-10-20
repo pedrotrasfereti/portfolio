@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== React =====================-*/
 import { BiSend as Send } from 'react-icons/bi'
@@ -8,6 +9,8 @@ import { BiSend as Send } from 'react-icons/bi'
 import emailjs from 'emailjs-com';
 
 const Form = () => {
+  const { t } = useTranslation()
+
   const initialValues = {
     name: '',
     address: '',
@@ -94,7 +97,7 @@ const Form = () => {
           name="name"
           type="text"
           className="Input"
-          placeholder="Nome"
+          placeholder={t('contact.form.name')}
           value={values.name}
           onChange={(evt) => handleInput(evt)}
           onBlur={(evt) => handleBlur(evt)}
@@ -102,7 +105,7 @@ const Form = () => {
         {
           !status.name && (
             <span className="Status">
-              O nome deve conter pelo menos 3 caracteres
+              {t('contact.form.invalidName')}
             </span>
           )
         }
@@ -113,7 +116,7 @@ const Form = () => {
           name="address"
           type="email"
           className="Input"
-          placeholder="E-Mail"
+          placeholder={t('contact.form.email')}
           value={values.address}
           onChange={(evt) => handleInput(evt)}
           onBlur={(evt) => handleBlur(evt)}
@@ -121,7 +124,7 @@ const Form = () => {
         {
           !status.address && (
             <span className="Status">
-              Escreva um e-mail valido
+              {t('contact.form.invalidEmail')}
             </span>
           )
         }
@@ -131,7 +134,7 @@ const Form = () => {
         <textarea
           name="message"
           className="TextArea"
-          placeholder="Mensagem"
+          placeholder={t('contact.form.message')}
           value={values.message}
           onChange={(evt) => handleInput(evt)}
           onBlur={(evt) => handleBlur(evt)}
@@ -139,7 +142,7 @@ const Form = () => {
         {
           !status.message && (
             <span className="Status">
-              A mensagem não pode ficar vazia
+              {t('contact.form.invalidMessage')}
             </span>
           )
         }
@@ -151,7 +154,7 @@ const Form = () => {
         className="Button"
         disabled
       >
-        Enviar <Send className="Icon" />
+        {t('contact.form.submit')} <Send className="Icon" />
       </button>
     </form>
   )

@@ -1,10 +1,13 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Icons =====================-*/
 import { RiMedal2Line as Award } from 'react-icons/ri'
 
 const Card = ({ repo, classlist }) => {
+  const { t } = useTranslation()
+
   const {
     name,
     language,
@@ -55,7 +58,7 @@ const Card = ({ repo, classlist }) => {
         target="_blank"
         className="RepoBtn"
       >
-        Ir ao repositório
+        {t('projects.viewRepo')}
       </a>
 
       {

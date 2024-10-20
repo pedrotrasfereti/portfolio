@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Styles =====================-*/
 import '../../styles/_services.scss'
@@ -14,17 +15,19 @@ import {
 } from 'react-icons/bi'
 
 const Services = () => {
+  const { t } = useTranslation()
+
   return (
     <section id="services" className="Services">
-      <h1 className="Heading">Serviços</h1>
+      <h1 className="Heading">{t('services.title')}</h1>
       <div className="Services--Container">
         <div id="service-fe" className="Service">
           <span className="Decoration" />
           <div className="Content">
             <FrontIcon className="Icon" />
-            <h2 className="Title">Desenvolvedor Front-End</h2>
+            <h2 className="Title">{t('services.frontEnd')}</h2>
             <a href="#contact" className="Link">
-              Entre em contato <ArrowDown className="Arrow" />
+              {t('services.getInTouch')} <ArrowDown className="Arrow" />
             </a>
           </div>
         </div>
@@ -32,9 +35,9 @@ const Services = () => {
           <span className="Decoration" />
           <div className="Content">
             <BackIcon className="Icon" />
-            <h2 className="Title">Desenvolvedor Back-End</h2>
+            <h2 className="Title">{t('services.backEnd')}</h2>
             <a href="#contact" className="Link">
-              Entre em contato <ArrowDown className="Arrow" />
+              {t('services.getInTouch')} <ArrowDown className="Arrow" />
             </a>
           </div>
         </div>
@@ -42,9 +45,9 @@ const Services = () => {
           <span className="Decoration" />
           <div className="Content">
             <FullIcon className="Icon" />
-            <h2 className="Title">Desenvolvedor Full-Stack</h2>
+            <h2 className="Title">{t('services.fullStack')}</h2>
             <a href="#contact" className="Link">
-              Entre em contato <ArrowDown className="Arrow" />
+              {t('services.getInTouch')} <ArrowDown className="Arrow" />
             </a>
           </div>
         </div>

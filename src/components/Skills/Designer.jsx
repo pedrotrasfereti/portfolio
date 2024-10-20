@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Icons =====================-*/
 import { BiPen as DesignerIcon } from 'react-icons/bi'
@@ -14,6 +15,8 @@ import Skill from './Skill'
 import { v4 as uuid } from 'uuid'
 
 const Designer = ({ handleDropdown, arrow, setWidth }) => {
+  const { t } = useTranslation()
+
   const skills = [
     {
       skillName: 'UI Design',
@@ -30,13 +33,13 @@ const Designer = ({ handleDropdown, arrow, setWidth }) => {
       <div className="DdHeader">
         <DesignerIcon className="Icon" />
         <div className="Container">
-          <h2 className="Title">UI Design</h2>
+          <h2 className="Title">UX/UI Design</h2>
           <a
             href=""
             target="_blank"
             className="Link Unavailable"
           >
-            Ver Credencial
+            {t('skills.viewCertificate')}
           </a>
         </div>
         <button

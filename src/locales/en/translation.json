@@ -7,8 +7,7 @@
   },
   "aboutMe": {
     "title": "About Me",
-    "text": "My journey as a programmer began in 2020 when I created my first personal website. I was captivated by the power of technology to solve problems of varying complexity. Since then, I've been refining my web development skills. In 2021, I completed the Trybe program, and since then, I have worked as a Front-End Developer, building scalable and efficient solutions with React and Vue.",
-    "text2": "My journey as a programmer began in 2020 when I decided to create a personal website. Throughout the journey of building it, I discovered a genuine passion for the freedom technology provides in solving problems, regardless of their complexity. Since then, I have relentlessly pursued knowledge in programming, with a particular focus on web development. In 2021, I enrolled in the specialized training course at Trybe, where I honed my skills to become a Front-End Developer. During my time there, I completed several projects that enhanced my expertise in creating user-friendly interfaces and optimized web applications. As a developer, I’ve had the opportunity to work on diverse projects that improved user engagement and streamlined processes. I’m always eager to learn and embrace new challenges, aiming to contribute to projects that make a positive impact."
+    "text": "My journey as a programmer began in 2020 when I created my first personal website. I was captivated by the power of technology to solve problems of varying complexity. Since then, I've been refining my web development skills. In 2021, I completed the Trybe program, and since then, I have worked as a Front-End Developer, building scalable and efficient solutions with React and Vue."
   },
   "skills": {
     "title": "Skills",

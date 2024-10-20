@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Styles =====================-*/
 import '../../styles/_footer.scss'
@@ -12,12 +13,16 @@ import {
 } from 'react-icons/fi'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer id="footer" className="Footer">
       <div className="Content--Container">
         <div className="Container">
           <h1 className="Title">Pedro</h1>
-          <span className="Subtitle">Desenvolvedor Full-Stack</span>
+          <span className="Subtitle">{t('footer.title')}</span>
         </div>
 
         <div className="Social">
@@ -33,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="Copyright--Container">
-        <span className="Copyright">Pedro Trasfereti 2022 ©</span>
+        <span className="Copyright">Pedro Trasfereti {currentYear} ©</span>
       </div>
     </footer>
   )

@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Styles =====================-*/
 import '../../styles/_skills.scss'
@@ -10,6 +11,8 @@ import Backend from './Backend'
 import Designer from './Designer'
 
 const Skills = () => {
+  const { t } = useTranslation()
+
   const [arrowFe, setArrowFe] = useState(false)
   const [arrowBe, setArrowBe] = useState(false)
   const [arrowDe, setArrowDe] = useState(false)
@@ -56,7 +59,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="Skills">
-      <h1 className="Heading">Habilidades</h1>
+      <h1 className="Heading">{t('skills.title')}</h1>
       <div className="Dropdown--Container">
         <Frontend
           handleDropdown={handleDropdown}

@@ -1,5 +1,6 @@
 /*-===================== React =====================-*/
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 /*-===================== Icons =====================-*/
 import { BiServer as BackIcon } from 'react-icons/bi'
@@ -14,6 +15,8 @@ import Skill from './Skill'
 import { v4 as uuid } from 'uuid'
 
 const Backend = ({ handleDropdown, arrow, setWidth }) => {
+  const { t } = useTranslation()
+  
   const skills = [
     {
       skillName: 'Node.js',
@@ -66,13 +69,13 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
       <div className="DdHeader">
         <BackIcon className="Icon" />
         <div className="Container">
-          <h2 className="Title">Desenvolvimento Back-End</h2>
+          <h2 className="Title">{t('skills.backEnd')}</h2>
           <a
             href="https://www.credential.net/9146c03f-77d6-4ab7-80ab-da2012a7bc4c"
             target="_blank"
             className="Link"
           >
-            Ver Credencial
+            {t('skills.viewCertificate')}
           </a>
         </div>
         <button
