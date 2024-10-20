@@ -71,7 +71,7 @@ const Backend = ({ handleDropdown, arrow, setWidth }) => {
         <div className="Container">
           <h2 className="Title">{t('skills.backEnd')}</h2>
           <a
-            href="https://www.credential.net/9146c03f-77d6-4ab7-80ab-da2012a7bc4c"
+            href="https://www.credential.net/efef4cdd-4308-453f-8a42-91eb2664093a"
             target="_blank"
             className="Link"
           >

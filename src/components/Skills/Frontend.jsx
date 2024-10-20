@@ -59,7 +59,7 @@ const Frontend = ({ handleDropdown, arrow, setWidth }) => {
         <div className="Container">
           <h2 className="Title">{t('skills.frontEnd')}</h2>
           <a
-            href="https://www.credential.net/aa8a954f-741b-426b-beb1-98477ad6194b"
+            href="https://www.credential.net/e4cb5ef0-b33e-4b17-a4eb-48a73aa61205"
             target="_blank"
             className="Link"
           >
