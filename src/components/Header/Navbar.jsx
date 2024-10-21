@@ -8,10 +8,21 @@ import {
   FiSun as Sun,
 } from 'react-icons/fi'
 
+import { IoLanguage as Language } from 'react-icons/io5'
+
 const Navbar = ({ inMenu, toggleMenu }) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const [theme, setTheme] = useState('light')
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === 'en' ? 'pt' : 'en';
+    i18n.changeLanguage(newLanguage);
+  };
 
   function toggleDark(themeStr) {
     const root = document.getElementById('theme-root')
@@ -68,13 +79,30 @@ const Navbar = ({ inMenu, toggleMenu }) => {
 
       {
         inMenu || (
-          <button className="Icon ThemeBtn">
-            {theme === 'light' ? (
-              <Moon onClick={() => toggleDark('dark')} />
-            ) : (
-              <Sun onClick={() => toggleDark('light')} />
-            )}
-          </button>
+          <div class="Container">
+            <div className="Dropdown">
+              <button className="Icon">
+                <Language onClick={() => {}} />
+              </button>
+
+              <ul class="DropdownMenu">
+                <li onClick={() => changeLanguage('en')}>
+                  <span>🇬🇧</span><span>EN</span>
+                </li>
+                <li onClick={() => changeLanguage('pt')}>
+                  <span>🇧🇷</span><span>PT</span>
+                </li>
+              </ul>
+            </div>
+
+            <button className="Icon ThemeBtn">
+              {theme === 'light' ? (
+                <Moon onClick={() => toggleDark('dark')} />
+              ) : (
+                <Sun onClick={() => toggleDark('light')} />
+              )}
+            </button>
+          </div>
         )
       }
 
@@ -91,9 +119,13 @@ const Navbar = ({ inMenu, toggleMenu }) => {
           <>
             <span className="Divider" />
 
-            <div className="Switch--Container">
-              <span className="Label">Modo Escuro</span>
+            <div className="Switch--Container" onClick={toggleLanguage}>
+              <span className="Label">Language:</span>
+              <span className="Label">{String(i18n.language).toUpperCase()}</span>
+            </div>
 
+            <div className="Switch--Container">
+              <span className="Label">Dark Mode</span>
               <label className="Switch">
                 <input
                   className="Checkbox"
